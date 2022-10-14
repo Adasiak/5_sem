@@ -1,0 +1,5 @@
+X100
+Algorytm bankiera służy do unikania zakleszczeń.
+TAK
+NIE
+BRAK ODPOWIEDZI

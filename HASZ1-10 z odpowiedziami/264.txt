@@ -1,0 +1,5 @@
+X100
+Zbiorem roboczym procesu nazywamy zestaw stron pamięci w ramach którego proces chwilowo pracuje
+TAK
+NIE
+BRAK ODPOWIEDZI

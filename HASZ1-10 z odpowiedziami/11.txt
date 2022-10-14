@@ -1,0 +1,5 @@
+X010
+Stan uśpienia procesu oznacza oczekiwanie na wykonanie na procesorze.
+TAK
+NIE
+BRAK ODPOWIEDZI

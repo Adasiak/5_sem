@@ -1,0 +1,5 @@
+X010
+Algorytm strusia pozwala na zapobieganie zakleszczeniom (wykrywanie i eliminację zakleszczeń).
+TAK
+NIE
+BRAK ODPOWIEDZI

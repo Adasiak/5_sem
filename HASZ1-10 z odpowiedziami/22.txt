@@ -1,0 +1,5 @@
+X010
+System może DOWOLNIE(!) ustawić wartość statusu dowolnego procesu
+TAK
+NIE
+BRAK ODPOWIEDZI

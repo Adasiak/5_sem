@@ -1,0 +1,5 @@
+X100
+Do synchronizacji dwóch wątków wykonujących się przez pamięć globalną, muteks jest wystarczającym elementem 
+TAK
+NIE
+BRAK ODPOWIEDZI

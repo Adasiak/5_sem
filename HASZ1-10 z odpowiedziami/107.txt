@@ -1,0 +1,5 @@
+X100
+Wątki jądra w ramach jednego procesu mogą jednocześnie wykonywać się na różnych procesorach/rdzeniach komputera.
+TAK
+NIE
+BRAK ODPOWIEDZI

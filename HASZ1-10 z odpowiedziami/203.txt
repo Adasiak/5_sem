@@ -1,0 +1,5 @@
+X010
+Stratega planowania SJF (Shortest-jobtime-first) dokonuje wywłaszczenia gdy pojawi się zadanie o krótszym czasie wykonania. 
+TAK
+NIE
+BRAK ODPOWIEDZI

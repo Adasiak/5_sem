@@ -1,0 +1,5 @@
+X100
+Wymiatanie jest procedura obrony systemu przed szamotaniem stron pamieci wirtualnej
+TAK
+NIE
+BRAK ODPOWIEDZI

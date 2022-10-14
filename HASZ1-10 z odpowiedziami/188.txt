@@ -1,0 +1,5 @@
+X010
+Planista odpowiada za wykonywanie wyroków ekspedytora.
+TAK
+NIE
+BRAK ODPOWIEDZI

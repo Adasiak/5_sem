@@ -1,0 +1,5 @@
+X100
+Proces w systemie unix może zadeklarować własna procedurę obsługi sygnału( dla większości typów sygnałów)
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+Wyścigi mają miejsce, kiedy program ma błąd generujący błędne dane w pamięci i zaczyna tworzyć wątki
+TAK
+NIE
+BRAK ODPOWIEDZI

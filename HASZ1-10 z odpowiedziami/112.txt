@@ -1,0 +1,5 @@
+X010
+Do synchronizacji wielu wątków komunikujących się przez pamięć globalną, pojedynczy muteks nie jest wystarczający
+TAK
+NIE
+BRAK ODPOWIEDZI

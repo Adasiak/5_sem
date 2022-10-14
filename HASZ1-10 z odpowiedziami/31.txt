@@ -1,0 +1,5 @@
+X100
+Proces utworzony przez klonowanie współdzieli z rodzicem wszystkie otwarte wcześniej pliki
+TAK
+NIE
+BRAK ODPOWIEDZI

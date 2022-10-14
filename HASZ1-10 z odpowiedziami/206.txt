@@ -1,0 +1,5 @@
+X010
+Strategia FCFS jest często stosowana ze względu na najkrótszy czas oczekiwania. 
+TAK
+NIE
+BRAK ODPOWIEDZI

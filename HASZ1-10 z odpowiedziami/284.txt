@@ -1,0 +1,5 @@
+X100
+Fragmentację zewnętrzną można minimalizować przez defragmentację.
+TAK
+NIE
+BRAK ODPOWIEDZI

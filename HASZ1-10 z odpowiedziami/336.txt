@@ -1,0 +1,5 @@
+X100
+Bufory są obszarami pamięci stosowanymi w celu tymczasowego przechowania danych transferowych pomiędzy urządzeniami, albo miedzy urzadzeniem, a programem.
+TAK
+NIE
+BRAK ODPOWIEDZI

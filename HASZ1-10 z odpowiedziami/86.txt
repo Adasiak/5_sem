@@ -1,0 +1,6 @@
+X010
+Bariera umożliwia wstrzymanie wykonywania wątku w celu zapewnienia mu wyłącznego dostępu do jakiegoś zasobu
+
+TAK
+NIE
+BRAK ODPOWIEDZI

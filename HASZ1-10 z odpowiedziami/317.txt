@@ -1,0 +1,5 @@
+X100
+Awaria dowolnego dysku w RAID 0 powoduje utratę danych
+TAK
+NIE
+BRAK ODPOWIEDZI

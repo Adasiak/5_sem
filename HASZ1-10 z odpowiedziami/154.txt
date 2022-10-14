@@ -1,0 +1,5 @@
+X100
+Algorytm wykrywania zakleszczeń znajduje procesy, które mogą zakończyć się z wykorzystaniem dostępnych zasobów.
+TAK
+NIE
+BRAK ODPOWIEDZI

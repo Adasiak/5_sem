@@ -1,0 +1,5 @@
+X100
+Kod jest przemieszczalny jeśli wszystkie adresy w nim zawarte są względne.
+TAK
+NIE
+BRAK ODPOWIEDZI

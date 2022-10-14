@@ -1,0 +1,5 @@
+X100
+Wątki użytkownika można stosować w systemach w ogóle nie wspierających wątków.
+TAK
+NIE
+BRAK ODPOWIEDZI

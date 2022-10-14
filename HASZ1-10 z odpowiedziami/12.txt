@@ -1,0 +1,5 @@
+X100
+Standardową reakcją na otrzymanie sygnału jest śmierć procesu (dla większości typów sygnałów).
+TAK
+NIE
+BRAK ODPOWIEDZI

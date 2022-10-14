@@ -1,0 +1,5 @@
+X100
+Tik określa w systemie operacyjnym okres, z jakim system wykonuje swoje cykliczne procedury administracyjne.
+TAK
+NIE
+BRAK ODPOWIEDZI

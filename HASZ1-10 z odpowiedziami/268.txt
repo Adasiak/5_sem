@@ -1,0 +1,5 @@
+X010
+W przypadku wiązania na etapie wykonania adres fizyczny jest identyczny z logicznym
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Strategia planowania FCFS (First-Come-First-Served) dobrze nadaje się do planowania zadań tła (obliczeniowych). 
+TAK
+NIE
+BRAK ODPOWIEDZI

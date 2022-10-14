@@ -1,0 +1,5 @@
+X100
+W systemach stronicowanej alokacji pamięci istnieje zjawisko fragmentacji wewnętrznej
+TAK
+NIE
+BRAK ODPOWIEDZI

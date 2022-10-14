@@ -1,0 +1,5 @@
+X100
+W systemie alokacji stronicowanej każdy proces posiada jedną tablicę stron.
+TAK
+NIE
+BRAK ODPOWIEDZI

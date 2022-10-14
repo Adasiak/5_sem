@@ -1,0 +1,5 @@
+X010
+Proces uniksowy jest zawsze w stanie wykonywalnym albo uśpionym.
+TAK
+NIE
+BRAK ODPOWIEDZI

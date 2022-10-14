@@ -1,0 +1,5 @@
+X010
+Metoda najlepszego dopasowania ciągłej alokacji pamięci wymaga mniejszego nakładu pracy w porównaniu z metodą pierwszego dopasowania
+TAK
+NIE
+BRAK ODPOWIEDZI

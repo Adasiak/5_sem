@@ -1,0 +1,5 @@
+X100
+Timer można zaprogramować, aby po określonym czasie przesłać sygnał‚ do procesu/ wątku.
+TAK
+NIE
+BRAK ODPOWIEDZI

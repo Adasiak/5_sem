@@ -1,0 +1,6 @@
+X010
+Procesor DMA wykonuje transfer danych pomiędzy pamięcią a głównym procesorem systemu
+
+TAK
+NIE
+BRAK ODPOWIEDZI

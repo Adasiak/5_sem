@@ -1,0 +1,5 @@
+X100
+Proces zombie jest procesem który nie może być usunięty przez system ze względu na niepoprawne zachowanie rodzica
+TAK
+NIE
+BRAK ODPOWIEDZI

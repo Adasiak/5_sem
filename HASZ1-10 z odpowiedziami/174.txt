@@ -1,0 +1,5 @@
+X010
+Zapobieganie zakleszczeniom polega na analizowaniu warunków przydziału zasobu, aby nie dopuścić do powstania zakleszczenia.
+TAK
+NIE
+BRAK ODPOWIEDZI

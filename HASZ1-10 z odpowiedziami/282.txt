@@ -1,0 +1,5 @@
+X100
+Ofiarą nazywa się stronę pamięci usuwaną z pamięci fizycznej w procesie obsługi błędu strony
+TAK
+NIE
+BRAK ODPOWIEDZI

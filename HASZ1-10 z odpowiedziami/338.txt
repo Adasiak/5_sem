@@ -1,0 +1,5 @@
+X010
+Przykładami urządzeń blokowych są terminal i drukarka, gdyż ich transfer odbywa się poprzez jednostki o stałej długości
+TAK
+NIE
+BRAK ODPOWIEDZI

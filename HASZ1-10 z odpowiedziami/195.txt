@@ -1,0 +1,5 @@
+X010
+Strategia planowania SJF (Shortest-jobtime-first) nadaje się do planowania zadań interakcyjnych.
+TAK
+NIE
+BRAK ODPOWIEDZI

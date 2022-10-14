@@ -1,0 +1,5 @@
+X100
+Środowisko procesu w systemie unix to jest zbiór zmiennych z wartościami stworzonych dla procesu
+TAK
+NIE
+BRAK ODPOWIEDZI

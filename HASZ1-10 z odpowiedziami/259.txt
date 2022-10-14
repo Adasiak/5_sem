@@ -1,0 +1,5 @@
+X100
+Tablica stron przechowywana jest w rejestrach sprzętowych. 
+TAK
+NIE
+BRAK ODPOWIEDZI

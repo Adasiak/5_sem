@@ -1,0 +1,5 @@
+X010
+Dryfem timera nazywamy błąd polegający na spóźnionym wykonaniu akcji przeterminowanego timera.
+TAK
+NIE
+BRAK ODPOWIEDZI

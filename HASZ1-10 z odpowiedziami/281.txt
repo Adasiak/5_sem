@@ -1,0 +1,5 @@
+X010
+Ofiarą (victim) nazywa się stronę pamięci przenoszoną do pamięci fizycznej w procesie obsługi błędu strony.
+TAK
+NIE
+BRAK ODPOWIEDZI

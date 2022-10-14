@@ -1,0 +1,5 @@
+X100
+System plików stanowi warstwę abstrakcji, za pomocą której system operacyjny umożliwia programom dostęp do przechowywania danych na dysku.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+Tablica stron pamięci zawiera adresy wirtualne przydzielonych stron pamięci procesu
+TAK
+NIE
+BRAK ODPOWIEDZI

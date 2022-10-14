@@ -1,0 +1,5 @@
+X010
+Zmienna warunkowa przesyła dane 
+TAK
+NIE
+BRAK ODPOWIEDZI

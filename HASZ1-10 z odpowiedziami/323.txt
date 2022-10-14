@@ -1,0 +1,5 @@
+X010
+W standardzie RAID-1 dokładanie dysków powoduje wzrost dostępnego miejsca do zapisu danych.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+Sprawiedliwość w planowaniu procesów oznacza przydzielanie wszystkim zadaniom procesora zgodnie z realizowanym algorytmem planowania. 
+TAK
+NIE
+BRAK ODPOWIEDZI

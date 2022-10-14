@@ -1,0 +1,5 @@
+X010
+Awaria dowolnego dysku w RAID 1 powoduje utratę danych
+TAK
+NIE
+BRAK ODPOWIEDZI

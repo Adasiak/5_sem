@@ -1,0 +1,6 @@
+X010
+Nierównomierność (jitter) timera może być spowodowana spóźnionym wykonaniem przeterminowanej akcji.
+
+TAK
+NIE
+BRAK ODPOWIEDZI

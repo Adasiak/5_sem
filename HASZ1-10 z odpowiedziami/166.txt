@@ -1,0 +1,6 @@
+X010
+Usuwanie zakleszczeń można realizować przez przydzielenie dodatkowych zasobów.
+
+TAK
+NIE
+BRAK ODPOWIEDZI

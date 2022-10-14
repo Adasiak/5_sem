@@ -1,0 +1,5 @@
+X100
+Podwójne buforowanie pozwala odizolować operacje wejścia / wyjścia od nadawcy i odbiorcy danych
+TAK
+NIE
+BRAK ODPOWIEDZI

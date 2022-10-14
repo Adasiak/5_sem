@@ -1,0 +1,5 @@
+X100
+Wydajność transferu stron z i do pamięci rośnie z wraz z rozmiarem stron. (+symetryczne: maleje)
+TAK
+NIE
+BRAK ODPOWIEDZI

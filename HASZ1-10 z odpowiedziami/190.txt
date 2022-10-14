@@ -1,0 +1,5 @@
+X100
+Strategia planowania RR (Round Robin) nadaje się do planowania zadań interakcyjnych. 
+TAK
+NIE
+BRAK ODPOWIEDZI

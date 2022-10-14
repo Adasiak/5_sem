@@ -1,0 +1,5 @@
+X100
+System operacyjny może synchronizować swój zegar systemowy dla utrzymania zgodności czasu z innymi systemami.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+W porównaniu z pojedynczym dyskiem schemat RAID-1 zwiększa niezawodność pracy dzięki redundancji
+TAK
+NIE
+BRAK ODPOWIEDZI

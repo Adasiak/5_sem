@@ -1,0 +1,5 @@
+X010
+Proces utworzony przez klonowanie współdzieli z rodzicem wszystkie zasoby
+TAK
+NIE
+BRAK ODPOWIEDZI

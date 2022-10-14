@@ -1,0 +1,5 @@
+X100
+Buforowanie umożliwia połączenie nadawcy i odbiorcy działających w różnych prędkościach
+TAK
+NIE
+BRAK ODPOWIEDZI

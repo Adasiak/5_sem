@@ -1,0 +1,5 @@
+X010
+Proces w czasie pracy posługuje się adresami fizycznymi
+TAK
+NIE
+BRAK ODPOWIEDZI

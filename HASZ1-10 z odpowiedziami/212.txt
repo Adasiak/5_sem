@@ -1,0 +1,5 @@
+X010
+Strategia planowania RR (Round-Robin) ogólnie powoduje małe narzuty administracyjne na przełączanie kontekstu. 
+TAK
+NIE
+BRAK ODPOWIEDZI

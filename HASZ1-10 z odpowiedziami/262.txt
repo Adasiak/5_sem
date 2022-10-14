@@ -1,0 +1,5 @@
+X010
+W systemie alokacji ciągłej możliwe jest wykonywanie programu którego zapotrzebowanie pamięci przekracza pojemność dostępnej pamięci fizycznej
+TAK
+NIE
+BRAK ODPOWIEDZI

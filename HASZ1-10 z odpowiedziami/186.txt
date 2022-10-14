@@ -1,0 +1,5 @@
+X100
+Operacje I/O sterowane przerwaniami są z reguły korzystniejsze niż programowane operacje I/O. 
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Strategia planowania FCFS (First-Come-First-Served) ogólnie wymaga małych narzutów administracyjnych. 
+TAK
+NIE
+BRAK ODPOWIEDZI

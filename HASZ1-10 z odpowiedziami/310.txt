@@ -1,0 +1,6 @@
+X010
+Programowane operacje I-O są z reguły korzystniejsze niż operacje I-O sterowane przerwaniami
+
+TAK
+NIE
+BRAK ODPOWIEDZI

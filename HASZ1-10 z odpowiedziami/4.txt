@@ -1,0 +1,5 @@
+X100
+Rolą systemu operacyjnego jest zarządzanie przydziałem zasobów dla aplikacji
+TAK
+NIE
+BRAK ODPOWIEDZI

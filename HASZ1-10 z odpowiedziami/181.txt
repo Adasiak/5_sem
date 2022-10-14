@@ -1,0 +1,5 @@
+X100
+Strategia planowania SJF (Shortest-Jobtime-First) dobrze nadaje się do planowania zadań obliczeniowych. 
+TAK
+NIE
+BRAK ODPOWIEDZI

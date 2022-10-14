@@ -1,0 +1,5 @@
+X100
+Stan uśpienia procesu oznacza oczekiwanie na jakieś zasoby
+TAK
+NIE
+BRAK ODPOWIEDZI

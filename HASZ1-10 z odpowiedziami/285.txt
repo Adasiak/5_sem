@@ -1,0 +1,5 @@
+X010
+Fragmentację wewnętrzną można minimalizować przez defragmentacje
+TAK
+NIE
+BRAK ODPOWIEDZI

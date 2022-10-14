@@ -1,0 +1,5 @@
+X010
+Stan niebezpieczny to taki stan, w którym występują zakleszczenia.
+TAK
+NIE
+BRAK ODPOWIEDZI

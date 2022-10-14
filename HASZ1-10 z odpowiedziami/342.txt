@@ -1,0 +1,5 @@
+X100
+Podwójne buforowanie pozwala zwiększyć prędkość wej/wyj
+TAK
+NIE
+BRAK ODPOWIEDZI

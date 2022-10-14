@@ -1,0 +1,6 @@
+X100
+Liczba nice umożliwia użytkownikom/ programistom zarządzanie przydziałem zasobów dla procesu. 
+
+TAK
+NIE
+BRAK ODPOWIEDZI

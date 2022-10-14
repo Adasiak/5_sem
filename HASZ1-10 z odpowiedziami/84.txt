@@ -1,0 +1,5 @@
+X100
+Jeden proces może zawierać tylko jeden wątek lub proces może składać się z kilku wątków
+TAK
+NIE
+BRAK ODPOWIEDZI

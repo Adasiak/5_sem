@@ -1,0 +1,5 @@
+X010
+Tworzenie podprocesu funkcją fork w procesie wielowątkowym zawsze tworzy nowy proces wielowątkowy.
+TAK
+NIE
+BRAK ODPOWIEDZI

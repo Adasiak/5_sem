@@ -1,0 +1,5 @@
+X100
+Wykrywanie zakleszczenia polega na dopuszczeniu do powstania zakleszczenia i podjęciu próby jego eliminacji.
+TAK
+NIE
+BRAK ODPOWIEDZI

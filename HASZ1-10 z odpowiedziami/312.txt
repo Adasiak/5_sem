@@ -1,0 +1,6 @@
+X100
+Odpytywanie (polling) to procedura obsługi sprawdzająca co pewien czas stan urządzenia w celu wykrycia jego gotowości do transmisji danych
+
+TAK
+NIE
+BRAK ODPOWIEDZI

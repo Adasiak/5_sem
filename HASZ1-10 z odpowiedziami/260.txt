@@ -1,0 +1,5 @@
+X010
+W systemach stronicowanej alokacji pamięci istnieje zjawisko fragmentacji zewnętrznej
+TAK
+NIE
+BRAK ODPOWIEDZI

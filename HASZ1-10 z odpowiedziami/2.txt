@@ -1,0 +1,5 @@
+X100
+Programy aplikacyjne wykonują się normalnie w trybie użytkownika i mogą przejść do trybu jądra w ramach funkcji systemowych.
+TAK
+NIE
+BRAK ODPOWIEDZI

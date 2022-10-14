@@ -1,0 +1,5 @@
+X010
+Muteks jest zmienną logiczną, której funkcje obsługi muszą być implementowane przez program użytkownika
+TAK
+NIE
+BRAK ODPOWIEDZI

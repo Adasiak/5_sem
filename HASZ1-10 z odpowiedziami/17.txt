@@ -1,0 +1,5 @@
+X010
+Po odebraniu sygnału przez proces, może on kontynuować pracę (dla większości typów sygnałów).
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Mutex może być użyty do zabezpieczenia równolegle wykonywanych operacji przed wyścigami
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+W porównaniu z pojedynczym dyskiem schemat RAID 1 pozwala wykorzystać większą pojemność
+TAK
+NIE
+BRAK ODPOWIEDZI

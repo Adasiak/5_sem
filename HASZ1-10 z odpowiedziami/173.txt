@@ -1,0 +1,5 @@
+X010
+Przy stosowaniu metody zapobiegania, wszystkie warunki konieczne do powstania zakleszczeń są prawdziwe.
+TAK
+NIE
+BRAK ODPOWIEDZI

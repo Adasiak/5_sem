@@ -1,0 +1,5 @@
+X100
+Podstawowym urządzeniem odmierzania czasu systemu operacyjnego jest systemowy timer sprzętowy.
+TAK
+NIE
+BRAK ODPOWIEDZI

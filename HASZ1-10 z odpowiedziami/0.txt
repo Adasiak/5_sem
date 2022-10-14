@@ -1,0 +1,5 @@
+X100
+Wywołania systemowe stanowią zestaw procedur systemu operacyjnego do realizacji specjalnych usług systemowych
+TAK
+NIE
+BRAK ODPOWIEDZI

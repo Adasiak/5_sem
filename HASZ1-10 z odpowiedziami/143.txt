@@ -1,0 +1,5 @@
+X100
+Zwiększanie drobnoziarnistości synchronizacji może zwiększyć czas wykonania całego programu.
+TAK
+NIE
+BRAK ODPOWIEDZI

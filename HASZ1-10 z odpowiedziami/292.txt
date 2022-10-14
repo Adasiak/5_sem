@@ -1,0 +1,5 @@
+X010
+Bit ważności w tablicy stron pamięci służy do oznaczania stron współdzielonych między procesami.
+TAK
+NIE
+BRAK ODPOWIEDZI

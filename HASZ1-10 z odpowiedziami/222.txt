@@ -1,0 +1,5 @@
+X010
+Podstawowym urządzeniem odmierzania czasu systemu operacyjnego jest zegar czasu rzeczywistego RTC.
+TAK
+NIE
+BRAK ODPOWIEDZI

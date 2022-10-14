@@ -1,0 +1,5 @@
+X010
+Muteks jest mechanizmem synchronizacji bardziej ogólnym niż blokady 
+TAK
+NIE
+BRAK ODPOWIEDZI

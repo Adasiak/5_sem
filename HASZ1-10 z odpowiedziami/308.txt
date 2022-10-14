@@ -1,0 +1,5 @@
+X100
+Operacje zapisu w RAID 0 są z reguły szybsze niż w RAID 1 przy zastosowaniu takich samych dysków
+TAK
+NIE
+BRAK ODPOWIEDZI

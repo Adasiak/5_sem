@@ -1,0 +1,5 @@
+X100
+Sygnalizacja błędów przez funkcje systemowe POSIX wymaga specjalnej obsługi w programach wielowątkowych.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Celem numerowania zasobów jest zapewnienie ustalonej kolejności przydziału zasobów, aby uniknąć pętli
+TAK
+NIE
+BRAK ODPOWIEDZI

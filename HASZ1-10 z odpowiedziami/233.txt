@@ -1,0 +1,5 @@
+X100
+Wartość time_t służy do określania czasu rzeczywistego (kalendarzowego) jako liczba sekund.
+TAK
+NIE
+BRAK ODPOWIEDZI

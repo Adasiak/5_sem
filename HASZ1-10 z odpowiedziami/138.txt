@@ -1,0 +1,5 @@
+X100
+Odblokowanie muteksu umożliwia wykonanie przez watki krytycznej sekcji programu 
+TAK
+NIE
+BRAK ODPOWIEDZI

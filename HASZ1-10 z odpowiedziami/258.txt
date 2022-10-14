@@ -1,0 +1,5 @@
+X100
+Przy przenoszeniu programu, w którym adresy pamięci są bezwzględne, na inne miejsce w pamięci, trzeba dokonać rekompilacji.
+TAK
+NIE
+BRAK ODPOWIEDZI

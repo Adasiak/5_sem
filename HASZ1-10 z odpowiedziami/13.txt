@@ -1,0 +1,5 @@
+X010
+Środowisko procesu w systemie Unix to jest zbiór innych procesów, z którymi dany proces się komunikuje.
+TAK
+NIE
+BRAK ODPOWIEDZI

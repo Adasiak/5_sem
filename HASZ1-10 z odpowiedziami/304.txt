@@ -1,0 +1,5 @@
+X100
+W porównaniu z pojedynczym dyskiem schemat RAID-0 zwiększa prędkość zarówno przy odczycie jak i zapisie
+TAK
+NIE
+BRAK ODPOWIEDZI

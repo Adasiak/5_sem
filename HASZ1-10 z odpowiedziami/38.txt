@@ -1,0 +1,5 @@
+X010
+Wszystkie procesy w systemie unix tworzone są przez połączenie dwóch procesów funkcja fork (z wyjątkiem procesu init)
+TAK
+NIE
+BRAK ODPOWIEDZI

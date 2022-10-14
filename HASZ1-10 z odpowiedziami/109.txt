@@ -1,0 +1,5 @@
+X100
+Wprowadzenie ochrony sekcji krytycznej muteksem może wydłużyć czas działania programu
+TAK
+NIE
+BRAK ODPOWIEDZI

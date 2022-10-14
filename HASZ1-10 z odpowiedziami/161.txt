@@ -1,0 +1,5 @@
+X010
+Stan niebezpieczny systemu oznacza, że w wyniku dalszej pracy procesów na pewno dojdzie do zakleszczenia.
+TAK
+NIE
+BRAK ODPOWIEDZI

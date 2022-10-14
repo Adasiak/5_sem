@@ -1,0 +1,5 @@
+X010
+Wielozadaniowość polega na jednoczesnym wykonywaniu wszystkich programów załadowanych do pamięci operacyjnej.
+TAK
+NIE
+BRAK ODPOWIEDZI

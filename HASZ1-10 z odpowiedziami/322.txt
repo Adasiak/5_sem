@@ -1,0 +1,5 @@
+X100
+W standardzie RAID-4 bity parzystości są umieszczone na jednym dysku twardym (za zakresem)
+TAK
+NIE
+BRAK ODPOWIEDZI

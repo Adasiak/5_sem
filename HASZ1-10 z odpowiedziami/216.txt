@@ -1,0 +1,6 @@
+X010
+Wywłaszczenie jest czynnością mogącą spowodować zagłodzenie pewnych procesów w systemie
+
+TAK
+NIE
+BRAK ODPOWIEDZI

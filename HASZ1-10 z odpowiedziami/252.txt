@@ -1,0 +1,5 @@
+X100
+W systemie ze stronicowaniem, każde odwołanie do pamięci wymaga translacji adresu
+TAK
+NIE
+BRAK ODPOWIEDZI

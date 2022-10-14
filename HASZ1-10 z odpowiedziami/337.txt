@@ -1,0 +1,5 @@
+X100
+Semantyka kopii zapewnia, że wersja danych zapisana przez aplikację na dysku będzie wersją z chwili odwołania się przez aplikację do systemu.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Bit ważności w tablicy stron pamięci służy do oznaczania stron istniejących w pamięci fizycznej
+TAK
+NIE
+BRAK ODPOWIEDZI

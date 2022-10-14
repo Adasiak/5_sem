@@ -1,0 +1,5 @@
+X100
+Stratega planowania SRTF (Shortest-Remaining-time-first) jest algorytmem wywłaszczającym. 
+TAK
+NIE
+BRAK ODPOWIEDZI

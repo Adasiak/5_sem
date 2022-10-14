@@ -1,0 +1,5 @@
+X010
+Wątki użytkownika w ramach jednego procesu mogą jednocześnie wykonywać się  na różnych procesorach/rdzeniach komputera.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X100
+Proces może zakończyć pracę swojego rodzica wysyłając mu sygnał.   
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,6 @@
+X010
+Proces może DOWOLNIE(!) ustawić wartość swojego statusu
+
+TAK
+NIE
+BRAK ODPOWIEDZI

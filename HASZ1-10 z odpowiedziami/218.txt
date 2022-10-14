@@ -1,0 +1,5 @@
+X100
+Funkcje sleep i nanosleep mogą zakończyć się po czasie dłuższym niż zadany jej czas.
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+Zegary typowo mogą odmierzać czas zarówno do przodu jak i do tyłu.
+TAK
+NIE
+BRAK ODPOWIEDZI

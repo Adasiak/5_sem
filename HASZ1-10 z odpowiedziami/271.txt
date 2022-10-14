@@ -1,0 +1,5 @@
+X100
+Wiązanie danych na etapie kompilacji upraszcza translacje adresu wirtualnego na fizyczny
+TAK
+NIE
+BRAK ODPOWIEDZI

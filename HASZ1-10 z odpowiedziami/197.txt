@@ -1,0 +1,5 @@
+X100
+Strategia planowania SJF (Shortest-jobtime-first) może doprowadzić do zagłodzenia pewnych procesów. 
+TAK
+NIE
+BRAK ODPOWIEDZI

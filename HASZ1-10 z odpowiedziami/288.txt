@@ -1,0 +1,5 @@
+X010
+Wymiatanie jest procedura obsługi błędu strony w systemie pamięci wirtualnej
+TAK
+NIE
+BRAK ODPOWIEDZI

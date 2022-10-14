@@ -1,0 +1,5 @@
+X100
+W systemie stosującym wywłaszczanie zasobów nie może dojść do zakleszczenia.
+TAK
+NIE
+BRAK ODPOWIEDZI

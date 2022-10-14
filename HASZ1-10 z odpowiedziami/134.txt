@@ -1,0 +1,5 @@
+X010
+Muteks moze byc uzyty do sygnalizacji gotowości danych przy komunikacji przez zmienne/ pamięć globalna
+TAK
+NIE
+BRAK ODPOWIEDZI

@@ -1,0 +1,5 @@
+X010
+Przełączanie kontekstu jest operacją wykonywaną przez proces po otrzymaniu przezeń sygnału. 
+TAK
+NIE
+BRAK ODPOWIEDZI

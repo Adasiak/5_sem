@@ -1,0 +1,5 @@
+X010
+Stronicowanie jest procesem zapisywania na dysku nieużywanych stron pamięci wirtualnej
+TAK
+NIE
+BRAK ODPOWIEDZI

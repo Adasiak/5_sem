@@ -1,0 +1,5 @@
+X100
+Warunkiem powstania zakleszczenia jest cykliczne oczekiwanie na przydział zasobów przez zbiór procesów.
+TAK
+NIE
+BRAK ODPOWIEDZI
