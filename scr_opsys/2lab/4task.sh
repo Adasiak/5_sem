@@ -26,4 +26,12 @@ then
 	read nazwatar
 fi
 
-tar -cjf $nazwatar "find . -type f -name "$maska" -mtime -$n"
+file=$(find /home/ -type f -name "*.$maska" -mtime -$n)
+file_count=$(find /home/ -type f -name "*.$maska" -mtime -$n | wc -l)
+
+if test $file_count >0;
+then
+	tar -cvf $nazwatar $file
+else
+	echo "Brak pliku"
+fi

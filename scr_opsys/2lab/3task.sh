@@ -1,22 +1,22 @@
 for arg in $@; 
 do
-    file=$(find /home/ -type f -name "$arg*")
-    dic=$(find /home/ -name "$arg*")
-    # echo $file
-    if test $file ;
-    then 
-        echo "Plik Istnieje" 
-    elif test $dic;
+    dic=$(find /home/ -type d -name "$arg*");
+    file=$(find /home/ -type f -name "$arg*");
+    
+    if test $dic;
     then
         file_num=$(ls  "$dic" | grep -v '/$' | wc -l);
         if test $file_num > 0;
         then
-            echo $file_num;
+                echo "Katalog ma:" $file_num "elementów";
         else
-            echo "Katalog jest pusty"
-        fi  
+                echo "Katalog jest pusty"
+        fi 
+    elif test $file ;
+    then 
+        echo "Plik Istnieje" 
     else
-        echo "Plik nie istnieje"
+        echo "Katalog/plik nie istnieje"
     
     fi
 done
