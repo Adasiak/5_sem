@@ -1,1 +1,2 @@
-bash 3prog.sh
+echo "2prog"
+sh 3prog.sh
