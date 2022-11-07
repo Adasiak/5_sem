@@ -3,26 +3,35 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+#include <string.h>
+#define DELAY 5e08
 
 void sigint_handler(int sig){
-    printf("Int signal - end work\n");
+    printf("\nInt signal - end work\n");
     exit(1);
 }
 
 void sigusr1_handler(int sig){
-    printf("Usr1 signal - end work\n");
+    printf("\nUsr1 signal\n");
 }
 
-void sigusr2_handler(int sig){
-    for(int i = 0; i <1000; i++){
-        printf("usr2 signal i =1000 - end work\n");
+void sigusr2_handler1(int sig){
+    printf("\nUsr2 signal\n");
+    for (int i=0;i<1000;i++){
+        continue;
     }
 }
 
-void sigterm_handler(int sig){
-    printf("term signal - end work\n");
+void sigusr2_handler2(int sig){
+    printf("\nUsr2 signal - end works\n");
+    exit(1);
 }
+
+void sigterm_handler(int sig){
+    printf("\nTerm signal\n");
+    exit(1);
+}
+
 
 int main(){
     struct  timespec t;
@@ -33,12 +42,25 @@ int main(){
 
     signal(SIGTERM,sigterm_handler);
     signal(SIGUSR1,sigusr1_handler);
-    signal(SIGUSR2,sigusr2_handler);
+    // signal(SIGUSR2,sigusr2_handler1);
     signal(SIGINT,sigint_handler);
+    signal(SIGALRM,SIG_IGN);
+
+    printf("%d\n", getpid());
+    alarm(3);
 
     while(1){
-        printf("%d %d\n", getpid(), i);
         i++;
+        if(i > 1000){
+            i=0;
+        }
+        else if (i == 1000)
+        {
+            signal(SIGUSR2,sigusr2_handler2);
+        }
+        else{
+            signal(SIGUSR2,sigusr2_handler1);
+        }
         nanosleep(&t,0);
     }
     return 0;
