@@ -1,0 +1,5 @@
+wykonanie HelloWorld execve() - wykonuje program wskazywane przez filename [”./a.out”]
+brk(NULL) = 0xXXXXXXX- podaje informacje gdzie kończy się stos pamięci.
+close - zamyka deskryptor
+mprotect - ustawia ochorne obszarów pamięci
+write() - wpisuje do deskryptora wartość bufora i zwraca ilość wpisanych znaków.

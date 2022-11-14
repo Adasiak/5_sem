@@ -1,0 +1,3 @@
+The current User name is
+Hello  wiktoradasiak
++++ exited (status 0) +++

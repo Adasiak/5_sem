@@ -1,0 +1,7 @@
+Program zostal zabity przez sygnal: SIGSEGV - czyli naruszenie ochrony pamieci.
+Powodem jest przekroczenie zakresu tablicy i wtedy tez otrzymujemy sygnal.
+write(1, ”Witajcie moi mili ...3;@”..., 4096) = 4096 — SIGSEGV
+sisigno = SIGSEGV, sicode = SEGVMAP ERR, siaddr = 0x55cc95ed5000 − − −
+Poprzez uzycie flagi -T lub -r mozemy zobaczyc ktore fragmenty kodu wykonuja sie najdluzej i sa
+problematyczne. Niestesy program script obciął koncówkę pliku w związku z czym jedynie zdjęcie
+pokazuje aktualną odpowiedź programu na pogram.c z błędem.

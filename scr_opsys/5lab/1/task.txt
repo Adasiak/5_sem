@@ -1,0 +1,17 @@
+strace [app] - polecenie do sledzenia wywolan systemowych oraz wywolania sygnalow. Moze sluzyc
+jako narzedzie diagnostyczne np.do przesledzenia czy w programie wystepuja wyscigi.
+Wyjscie polecenia ma postac:
+nazwa wywolania systemowego (argumenty) = zwracana wartosc
+Sygnaly sa dekodowane do struktury siginfo.
+Jesli wywolanie systemowe zostaje wstrzymane podczas dzialania programu pojawia sie znacznik- ¿
+unfinished, pozniej przy przywracaniu wywolania znacznik -¿resumed.
+Wskazniki na struktury sa wyluskiwane wraz z kazdym polem struktury (pokazywane sa wszystkie
+wartosci).
+Pomocne wywolania:
+strace -e trace=[nazwa polecenia systemowego] [program] - wyszukanie konkretnego polecenia
+systemowego, mozliwosc wyszukiwania kilku polecen jednoczesnie
+strace -e signal=[nazwa sygnalu] [program] - wyszukuje okreslony zestaw sygnalow
+strace -p - strace dla konkretnego pid
+strace -t - dodaje moment wywolania / mozna tez -r co daje lepszy podglad
+strace -T - dodaje czas trwania wywolania
+strace -c - dodaje ilosc czasu na dane wywolanie systemowe
