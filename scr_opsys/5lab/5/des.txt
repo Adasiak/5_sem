@@ -1,0 +1,134 @@
+
+Wszystkie outputy komend podawanych w podpuktach można znalezc w folderze truss_outputs.
+Na podstawie tych outputow formulowane sa ponizsze wnioski
+
+1.
+truss ./simple_screen_output_BIN 2> truss_outputs/1.txt
+
+Dzieki narzedziu truss mozna zauwazyc , ze program przed wykonaniem wyswietlenia tekstu na stdout
+wykonuje duzo nikskopoziomowych komend. Glownie zarzadzanie pamiecia programu (memcntl, mmap) oraz 
+operacje zwiazane z samym plikiem, czyli np. pobieranie jego statusu (stat64) oraz otwieranie i zamykanie 
+deskryptorow (close, open64). Dodatkowo mozna zauwayzc owieranie bibliotek, np. open("/lib/libc.so.1", 
+O_RDONLY). 
+Ciekawe jest ze pierwsza komenda jak jest wywolywana to komenda z rodziny exec*.
+Komenda ktora rzeczywiscie wyrzuca napis na stdout to write() ktora pojawia sie dopiero jako 
+przedostatnia - write(1, " H e l l o   W o r l d !".., 13)      = 13. Widac ze pisze do deskryptora 1 
+(stdout) i ze wpisala 13 znakow (Hello World!/0).Zaraz po niej mozna zauwazyc wyjscie z programu z statusem 
+powodzenia  - _exit(0).
+
+
+2
+truss bash 2> truss_outputs/2.txt
+cat truss_outputs/2.txt | grep open | grep config
+
+Po wykoaniu powyzszego polecenia CAT naszym oczom ukazuje sie:
+open("/var/ld/ld.config", O_RDONLY)             = 3
+
+Co jest oczywiscie odpowiedzia na pytanie.
+
+
+3
+truss -u libc:printf ls 2> truss_outputs/3.txt
+cat truss_ls.txt | grep printf | wc -l
+
+Otrzymany wynik z polecenia wc to 8.
+Natomiat po usnieciu polecenia wc z potoku, otrzymujemy:
+/1@1:   -> libc:printf(0x147d4, 0x282c0, 0x26524, 0x26c00)
+/1@1:   <- libc:printf() = 22
+/1@1:   -> libc:printf(0x147d4, 0x289b0, 0x26524, 0x20)
+/1@1:   <- libc:printf() = 24
+/1@1:   -> libc:printf(0x147d4, 0x28510, 0x26524, 0x20)
+/1@1:   <- libc:printf() = 13
+/1@1:   -> libc:printf(0x147d4, 0x28760, 0x26524, 0x20)
+/1@1:   <- libc:printf() = 11
+
+Widac ze dla jednego uzycia printf, polecenie truss podsuwa nam slowo 'printf' dwa razy - raz aby pokazac 
+argumenty z ktorymi wywolujemy printf i drugi raz kiedy pokazuje nam return value.
+Wedle tego rozumowania, liczba 8 oczywiscie zgadza sie z iloscia elementow do wyswietlenia -> 8/2=4 (tyle 
+elementow aktualnie znajduje sie w katalogu).
+
+
+4
+truss nano truss_outputs/1.txt 2> truss_outputs/4.txt
+cat truss_outputs/4.txt | grep 1.txt
+
+Do analizy użyto edytora nan.o Jak widac, zostala wyszukana nazwa edytowanego pliku aby sprawdzic 
+jakie operacje byly na nim wykoywane. Wynik z polecenia CAT:
+
+#1
+stat64("truss_outputs/1.txt", 0xFFBFF8F8)       = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA90) = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA90) = 0
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_RDONLY) = 3
+stat64("truss_outputs/1.txt", 0xFFBFF868)       = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA00) = 0
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_WRONLY|O_APPEND|O_CREAT, 0666) = 3
+stat64("truss_outputs/1.txt", 0x000FEB70)       = 0
+
+#2
+stat64("truss_outputs/1.txt", 0xFFBFF8F8)       = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA90) = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA90) = 0
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_RDONLY) = 3
+stat64("truss_outputs/1.txt", 0xFFBFF868)       = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA00) = 0
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_WRONLY|O_APPEND|O_CREAT, 0666) = 3
+stat64("truss_outputs/1.txt", 0x000FEB70)       = 0
+stat64("truss_outputs/1.txt", 0xFFBFF908)       = 0
+stat64("truss_outputs/1.txt", 0xFFBFF908)       = 0
+stat64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", 0xFFBFFA28) = 0
+lstat64("truss_outputs/1.txt", 0xFFBFF908)      = 0
+stat64("truss_outputs/1.txt", 0xFFBFF870)       = 0
+open64("truss_outputs/1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+stat64("truss_outputs/1.txt", 0x000FEB70)       = 0
+
+Na pierwszy rzut oka widac ze wykonywane sa tylko dwie operacje: sprawdzanie statusu i otwieranie pliku.
+Pod numerem 1 mamy output z trussa w przypadku kiedy plik zostal otwarty i od razu zamkniety. Pod numerem dwa 
+plik byl poddany edycji. Widac, ze w pierwszym przypadku mamy pojedyncze otwarcie do odczytu, i pojedyncze 
+otwarcie do zapisu. W drugim przypadku mamy dodatkowe otwarcie do zapisu w ktorym zamiast flagi O_APPEND mamy 
+flage O_TRUNCATE. Widac ze ten dodatkowy krok ma na celu usuniecie smieci z pliku przed zapiseniem w nim 
+nowej, edytowanej zawartosci. Rzecz jasna w przypadku kiedy flaga O_CREAT zostanie uzyta do stworzenia pliku 
+mamy podane prawa 0666 czyli zapis i odczyt dla wszystkich grup uzytkownikow.
+
+Przyjzyjmy sie natomiast innemu sposobowi wyszukiwania:  
+
+diablobash-4.3$ cat truss_outputs/4.txt | egrep "open|close"  
+open("/var/ld/ld.config", O_RDONLY)             = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv9/libintl.so.8", O_RDONLY) = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv8/libintl.so.8", O_RDONLY) = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv9/libncursesw.so.5", O_RDONLY) = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv8/libncursesw.so.5", O_RDONLY) = 3
+close(3)                                        = 0
+open("/lib/libc.so.1", O_RDONLY)                = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv9/libiconv.so.2", O_RDONLY) = 3
+close(3)                                        = 0
+open("/opt/csw/lib/sparcv8/libiconv.so.2", O_RDONLY) = 3
+close(3)                                        = 0
+open("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", O_RDONLY) = 3
+close(3)                                        = 0
+open64("/etc/opt/csw/nanorc", O_RDONLY)         Err#2 ENOENT
+open64("/home/apucher/.nanorc", O_RDONLY)       Err#2 ENOENT
+open64("/opt/csw/share/terminfo/x/xterm-color", O_RDONLY) = 3
+close(3)                                        = 0
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_RDONLY) = 3
+close(3)                                        = 0
+close(3)                                        Err#9 EBADF
+open64("/home/apucher/SCR/7/Zad1/truss_outputs/1.txt", O_WRONLY|O_APPEND|O_CREAT, 0666) = 3
+close(3)                                        = 0
+close(3)                                        Err#9 EBADF
+open64("truss_outputs/1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+close(3)                                        = 0
+
+Widac ze kazde otwarcie pliku konczy sie pozniej jego zamknieciem funkcja close().
+
+Odpowiadajac na pytanie zadane w cwiczeniu:
+Plik nie jest otwarty przez caly czas dzialanie edytora. Jest on otwarty tylko na potrzeby wykonania na nim 
+kluczowych operacji. Jedna z nich jest polecenie llseek ktore zwraca pointer na miejsce w 
+ktorym znajduje sie koniec pliku   (llseek(3, 0, SEEK_END)                          = 2660). 
+Dodatkowo wyjasnia to wprost po co dodatkowe otwarcie pliku do zapisu w przypadku dokonanej edycji - dlatego 
+ze edytor robi to "na raz" i nie trzyma pliku otwartego przez caly czas.
