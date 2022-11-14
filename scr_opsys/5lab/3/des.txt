@@ -1,36 +1,59 @@
-execve("./a.out", ["./a.out"], 0x7fffdf3358a0 /* 55 vars */) = 0
-brk(NULL)                               = 0x558d338bf000
-arch_prctl(0x3001 /* ARCH_??? */, 0x7fffd86da8e0) = -1 EINVAL (Zły argument)
-access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (Nie ma takiego pliku ani katalogu)
+strace -e write=1 ./a.out
+
+execve("./a.out", ["./a.out"], 0x7ffd228df260 /* 19 vars */) = 0
+brk(NULL)                               = 0x559b5f820000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=99241, ...}) = 0
-mmap(NULL, 99241, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f70976b8000
+fstat(3, {st_mode=S_IFREG|0644, st_size=14969, ...}) = 0
+mmap(NULL, 14969, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f405bf3b000
 close(3)                                = 0
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
-pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
-pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
-pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
-fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70976b6000
-pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
-pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
-pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
-mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70974c4000
-mprotect(0x7f70974e9000, 1847296, PROT_NONE) = 0
-mmap(0x7f70974e9000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f70974e9000
-mmap(0x7f7097661000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f7097661000
-mmap(0x7f70976ac000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f70976ac000
-mmap(0x7f70976b2000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f70976b2000
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@>\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1905632, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f405bf39000
+mmap(NULL, 1918592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f405bd64000
+mmap(0x7f405bd86000, 1417216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f405bd86000
+mmap(0x7f405bee0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x7f405bee0000
+mmap(0x7f405bf2f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ca000) = 0x7f405bf2f000
+mmap(0x7f405bf35000, 13952, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f405bf35000
 close(3)                                = 0
-arch_prctl(ARCH_SET_FS, 0x7f70976b7540) = 0
-mprotect(0x7f70976ac000, 12288, PROT_READ) = 0
-mprotect(0x558d323c8000, 4096, PROT_READ) = 0
-mprotect(0x7f70976fe000, 4096, PROT_READ) = 0
-munmap(0x7f70976b8000, 99241)           = 0
+arch_prctl(ARCH_SET_FS, 0x7f405bf3a540) = 0
+mprotect(0x7f405bf2f000, 16384, PROT_READ) = 0
+mprotect(0x559b5eaf6000, 4096, PROT_READ) = 0
+mprotect(0x7f405bf69000, 4096, PROT_READ) = 0
+munmap(0x7f405bf3b000, 14969)           = 0
 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
-brk(NULL)                               = 0x558d338bf000
-brk(0x558d338e0000)                     = 0x558d338e0000
+brk(NULL)                               = 0x559b5f820000
+brk(0x559b5f841000)                     = 0x559b5f841000
 write(1, "Hello Word!", 11Hello Word!)             = 11
+ | 00000  48 65 6c 6c 6f 20 57 6f  72 64 21                 Hello Word!      |
 exit_group(0)                           = ?
 +++ exited with 0 +++
+
+adasiak@N-20S1PF2L436N:~/5_sem/scr_opsys/5lab/2$ strace -e trace=desc ./a.out
+
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14969, ...}) = 0
+mmap(NULL, 14969, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f81582de000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@>\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1905632, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81582dc000
+mmap(NULL, 1918592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8158107000
+mmap(0x7f8158129000, 1417216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f8158129000
+mmap(0x7f8158283000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x7f8158283000
+mmap(0x7f81582d2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ca000) = 0x7f81582d2000
+mmap(0x7f81582d8000, 13952, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f81582d8000
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Hello Word!", 11Hello Word!)             = 11
++++ exited with 0 +++
+
+adasiak@N-20S1PF2L436N:~/5_sem/scr_opsys/5lab/2$ strace -e trace=file ./a.out
+
+execve("./a.out", ["./a.out"], 0x7ffdc1bab950 /* 19 vars */) = 0
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+Hello Word!+++ exited with 0 +++
