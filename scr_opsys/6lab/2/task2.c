@@ -25,7 +25,7 @@ int main()
     }
     // parent
     close(pipe_fd[0]);
-    file=fopen("Dame.png","r");
+    file=fopen("Dame.jpeg","r");
     
     if(file==NULL){
         printf("File error\n");
