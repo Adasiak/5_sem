@@ -7,7 +7,7 @@
 
 int main(int argc,char *argv[]){
     
-    int pipefd[2],filefd,countWords; 
+    int pipefd[2], filefd, countWords; 
     char buf[MaxSize]; 
     
     if (pipe(pipefd) ==-1) { 
