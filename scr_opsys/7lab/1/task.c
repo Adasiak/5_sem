@@ -7,7 +7,7 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <pthread.h>
-
+#include <stdlib.h>
 
 #define BABBLE_NAME "/Y01-42e"
 #define BABBLE_MODE 0777
@@ -31,8 +31,8 @@ int main()
     if(fd < 0)
     {
       printf("Error opening");
-      // perror(*shm_open);
-      // exit(-1);
+      perror(*shm_open);
+      exit(-1);
     }
     // if(mmap() < 0)
     // { 
