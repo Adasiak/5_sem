@@ -39,6 +39,4 @@ int main()
     //   perror(*mmap);
     //   exit(-1);
     // }
-
-  return 0;
 }
