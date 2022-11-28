@@ -31,7 +31,7 @@ int main()
     if(fd < 0)
     {
       printf("Error opening");
-      perror(*shm_open);
+      // perror(*shm_open);
       exit(-1);
     }
     // if(mmap() < 0)
