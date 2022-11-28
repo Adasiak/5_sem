@@ -1,0 +1,45 @@
+execve("a.out", 0xFFBFFD04, 0xFFBFFD0C)  argc = 1
+sysinfo(SI_MACHINE, "sun4u", 257)               = 6
+mmap(0x00000000, 32, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF3E0000
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF390000
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF380000
+memcntl(0xFF3A0000, 17900, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF370000
+memcntl(0x00010000, 1872, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+resolvepath("/usr/lib/ld.so.1", "/lib/ld.so.1", 1023) = 12
+getcwd("/home/wadasiak/5_sem/scr_opsys/5lab/9", 1017) = 0
+resolvepath("/home/wadasiak/5_sem/scr_opsys/5lab/9/a.out", "/home/wadasiak/5_sem/scr_opsys/5lab/9/a.out", 1023) = 43
+stat64("/home/wadasiak/5_sem/scr_opsys/5lab/9/a.out", 0xFFBFF7C8) = 0
+open("/var/ld/ld.config", O_RDONLY)             = 3
+fstat64(3, 0xFFBFF338)                          = 0
+mmap(0x00000000, 148, PROT_READ, MAP_SHARED, 3, 0) = 0xFF360000
+close(3)                                        = 0
+stat64("/opt/csw/lib/libc.so.1", 0xFFBFEF28)    Err#2 ENOENT
+stat64("/lib/libc.so.1", 0xFFBFEF28)            = 0
+resolvepath("/lib/libc.so.1", "/lib/libc.so.1", 1023) = 14
+open("/lib/libc.so.1", O_RDONLY)                = 3
+mmap(0x00010000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF350000
+mmap(0x00010000, 1368064, PROT_NONE, MAP_PRIVATE|MAP_NORESERVE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF200000
+mmap(0xFF200000, 1247157, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_TEXT, 3, 0) = 0xFF200000
+mmap(0xFF342000, 35965, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_INITDATA, 3, 1253376) = 0xFF342000
+mmap(0xFF34C000, 1616, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANON, -1, 0) = 0xFF34C000
+munmap(0xFF332000, 65536)                       = 0
+munmap(0xFF350000, 32768)                       = 0
+close(3)                                        = 0
+memcntl(0xFF200000, 146148, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+mmap(0x00010000, 24576, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF350000
+getcontext(0xFFBFF638)
+getrlimit(RLIMIT_STACK, 0xFFBFF618)             = 0
+getpid()                                        = 27033 [27032]
+setustack(0xFF352A88)
+ioctl(1, TCGETA, 0xFFBFEC44)                    = 0
+fstat64(1, 0xFFBFEB60)                          = 0
+stat64("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", 0xFFBFE140) = 0
+resolvepath("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", "/platform/sun4u-us3/lib/libc_psr.so.1", 1023) = 37
+open("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", O_RDONLY) = 3
+mmap(0x00010000, 6600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF1F0000
+munmap(0xFF1F2000, 4294965704)                  Err#22 EINVAL
+close(3)                                        = 0
+Hello Word!write(1, " H e l l o   W o r d !", 11)               = 11
+_exit(0)
+-bash-3.2$

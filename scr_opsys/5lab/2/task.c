@@ -2,6 +2,6 @@
 #include <time.h>
 
 int main(){
-    printf("Hello Word!");
+    printf("Hello Word!\n");
     return 0;
 }

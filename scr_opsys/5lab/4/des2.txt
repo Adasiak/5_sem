@@ -1,3 +1,0 @@
-The current User name is
-Hello  adasiak
-+++ exited (status 0) +++
