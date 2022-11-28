@@ -30,6 +30,8 @@ int main()
 
     if(fd < 0){
       printf("Error opening");
-      exit(0);
+      exit(-1);
     }
+
+
 }
