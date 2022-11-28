@@ -27,11 +27,19 @@ int main()
     int fd,i;
     char *addr ,c;
     fd = shm_open(BABBLE_NAME, O_RDONLY, BABBLE_MODE);
+    int mm;
+    
+    mm = mmap(NULL, BABBLE_LENGTH, PROT_READ, MAP_PRIVATE, MAP_SHARED, NULL);
 
     if(fd < 0){
       printf("Error opening");
       exit(-1);
     }
+
+    // if(pa < 0){
+    //   printf("Error opening");
+    //   exit(-1);
+    // }
 
 
 }
