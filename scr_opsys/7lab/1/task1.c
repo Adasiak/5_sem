@@ -24,6 +24,8 @@ struct babblespace {
 
 int main()
 {
+    struct babblespace * segment;
+    
     int fd,i;
     char *addr ,c;
     fd = shm_open(BABBLE_NAME, O_RDONLY, BABBLE_MODE);
@@ -32,17 +34,19 @@ int main()
     mm = mmap(NULL, BABBLE_LENGTH, PROT_READ, MAP_PRIVATE, MAP_SHARED, NULL);
 
     if(fd < 0){
-      printf("Error opening");
-      exit(-1);
-    }
-    else{
-        printf("\nWorking directory\n");
-    }
-
-    // if(pa < 0){
-    //   printf("Error opening");
+      printf("\nError opening\n");
     //   exit(-1);
-    // }
+        printf("%d\n", fd);
+    }
+    printf("%d\n", fd);
+
+    segment = (struct babblespace *) mmap(NULL, sizeof(struct babblespace),PROT_READ,MAP_SHARED,fd,0);
+    if(segment == MAP_FAILED){
+      printf("\nError map\n");
+      printf("%s\n", segment-> babbles[1]);
+      return 0;
+    //   exit(-1);
+    }
 
 
 }
