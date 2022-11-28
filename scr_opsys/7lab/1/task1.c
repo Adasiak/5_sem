@@ -35,7 +35,10 @@ int main()
       printf("Error opening");
       exit(-1);
     }
-
+    else{
+        printf("Working directory");
+    }
+    
     // if(pa < 0){
     //   printf("Error opening");
     //   exit(-1);
