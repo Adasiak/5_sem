@@ -32,7 +32,7 @@ int main()
     {
       printf("Error opening");
       // perror(*shm_open);
-      exit(-1);
+      // exit(-1);
     }
     // if(mmap() < 0)
     // { 
