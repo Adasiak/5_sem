@@ -43,10 +43,10 @@ int main()
     segment = (struct babblespace *) mmap(NULL, sizeof(struct babblespace),PROT_READ,MAP_SHARED,fd,0);
     if(segment == MAP_FAILED){
       printf("\nError map\n");
-      printf("%s\n", segment-> babbles[1]);
-      return 0;
     //   exit(-1);
     }
+    printf("%s\n", segment-> babbles[1]);
+    return 0;
 
 
 }
