@@ -34,11 +34,11 @@ int main()
       perror(*shm_open);
       exit(-1);
     }
-    if(mmap(NULL, BABBLE_LENGTH, PROT_READ) < 0)
-    { 
-      perror(*mmap);
-      exit(-1);
-    }
+    // if(mmap() < 0)
+    // { 
+    //   perror(*mmap);
+    //   exit(-1);
+    // }
 
 
 }
