@@ -36,9 +36,9 @@ int main()
       exit(-1);
     }
     else{
-        printf("Working directory");
+        printf("\nWorking directory\n");
     }
-    
+
     // if(pa < 0){
     //   printf("Error opening");
     //   exit(-1);
