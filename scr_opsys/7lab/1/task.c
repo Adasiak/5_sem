@@ -28,15 +28,14 @@ int main()
     char *addr ,c;
     fd = shm_open(BABBLE_NAME, O_RDWR, BABBLE_MODE);
 
-    if(fd < 0)
-    {
+    if(fd < 0){
       printf("Error opening");
-      // perror(*shm_open);
       exit(-1);
     }
-    // if(mmap() < 0)
-    // { 
-    //   perror(*mmap);
-    //   exit(-1);
-    // }
+/*    if(mmap() < 0)
+    { 
+      perror(*mmap);
+      exit(-1);
+   }
+*/
 }
