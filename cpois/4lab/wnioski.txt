@@ -1,0 +1,12 @@
+Pytania otwarte
+1. Dla filtru Gaussa suma macierzy konwulcji jest równa kwadratowi sumy wektora N_k. Dla filtru Sobela suma macierzy konwulcji jest równa 0. Zatem suma macierzy konwulcji jest zależna od danego filtra.
+
+2. Filtr Gaussa lepiej radzi sobie z szumeme Gaussa. Filtr medianowy lepiej radzi sobie z szumem impulsowym.
+
+3. Filtracaj dolnoprzepustowa - elementy wolno zmienne stają się wypukłe. Zanikają elmenty zaybkozmienne - o wysokiej częstotliwości.
+
+Filtracja górnoprzepustowa - elementy wolnozmienne zostają wycięte dzięki czemu pozostają same elementy szybkozienne - wypuklone zostają kontury.
+
+4. Filtr górnoprzepustowy z indeksem x - obliczana jest pierwsza pochodna obrazu w osi poziomej. Analogiczna sytuacja występuje dla filtra z indeksem y ale tym razem pochodna jest liczona w osi pionowej. Jest to zauważalne na widmie.
+
+5. Jest to nawiązanie do filtru Sobela o indeksie x jak i y. można temu zaradzić zmieniając ujemne wartośici w macierzy na dodatnie.

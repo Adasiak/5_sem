@@ -1,0 +1,44 @@
+1.Ptherads                                                      GOTOWE
+gcc -o hello hello.c -lpthread
+gcc -o 1 1.c -lpthread
+
+Program wykonuje oczekiwane zadania. Różnica polega na tym, że zwaracana wartość ID w moim programie jest wykonywana za pomocą funkcji pthread_self(), natomiast w programie Hello.c wypisywana jest zmienna iteracyjna z pętli.
+
+
+2. Tworzenie wątków                                             GOTOWE
+gcc -o  hello32 hello32.c -lpthread -lm
+
+Wątki są wyświetlane w zmiennej kolejności lecz można zauważyć, że zazwyczaj na początku są wyświetlane wątki o niskich numerach. Kolejność wyświetlania wątków zależy od planisty, który zapewnia zasoby dla jednego wątku i wykonuje obliczenia dla innego. Występuje tutaj zjawisko wyścigów. Można je wyeliminować wykorzystując semafory lub mutexy.
+
+
+3. Przekazywanie argumentów                                     GOTOWE
+gcc -o hello_arg1 hello_arg1.c -lpthread
+Argument jest przkazywany do funkcji pthread_create() jako wskaźnik, rzutowanie na (void*).
+
+gcc -o hello_arg2 hello_arg2.c -lpthread
+Dla wielu argumentów jest to wskaźnik na strukturę thread_data.
+
+
+bug3.c
+gcc -o bug3 bug3.c -lpthread
+Program nie działa prawidłowo ze względu na zbyt złożone rzutowanie zmiennch.
+
+W programie zostało usunięte rzutowanie wskaźników taskid = *(*long) threadid -> taskid = (long) threadid,
+
+usunięto referencje pthread_create(&threads[t], NULL, PrintHello, (void *) &t); -> pthread_create(&threads[t], NULL, PrintHello, (void *) t);
+
+4. Kończenie wątków                                             GOTOWE
+gcc -o bug5 bug5.c -lpthread -lm
+Jak można zauważyć program kończy swoje działanie zanim wszystkie wątki zdążą wykonać się do końca. Wyeliminowanie błędu polega na dodaniu funkcji pthread_join(), która wstrzymuje działanie do momentu aż dany wątek się wykona.
+
+
+5. Stos                                                         GOTOWE
+Po uruchomieniu programu bug2.c można zauważyć, że występuje Segmentation fault. Jest on spowodowany naruszeniem ochrony pamięci.
+
+W poprawionym kodzie ten błąd nie występuje dzięki dodaniu funkcji, która ustawia rozmiar stosu pthread_attr_setstacksize(). Zliczna jest ilośc bitów, którą zawiera tablica - ARRAY_SIZE*sizeof(double) + MEGEXTRA.
+ Rozmiar stosu został powiększony o stałą MEGEXTRA. Po zmniejszeniu wartości  MEGEXTRA (np. na 10) ponownie pojawia się naruszenie ochrony pamięci. Należy także pamiętać o zmianie w funkcji pthread_create() NULL na &attr.
+
+
+
+
+6. Monte Carlo                                                  DOKOŃCZ

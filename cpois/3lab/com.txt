@@ -68,3 +68,22 @@ pojawiają się jednak pewne zafalowania, które są wynikiem efektu Gibbsa
 
 
 
+Pytania otwarte
+1. Transformacja Furiera jest operacją liniową. Transformacja Furiera jest również operacją odwracalną. Zostało to pokazane w zadaniu 1 gdzie można zauważyć, że histogram obrazu pierwotnego jak i obrazu po odwrotnej transformacie mają taki sam przebieg.
+
+2. Niskie częstotliwości znajdują się na środku widma obrazu, natomiast wysokie częstotliwości są na obrzeżach. Składowa stała znajduje się na środku widma.
+
+
+3. Widmo obrazu jest jaśniejsze w centrum niż na obrzeżach dla obrazów wolnozmiennych, ponieważ na środku widma znajdują się niksie częstotliwości. Dodatkowo na środku znajduje sie stała skladowa.
+
+4. Pojawienie się ukośnych linii w widmie obrazu ball.png jest spowodowane występowaniem gwałtownych zmian - krawędzie na obrazie. Można zauważyć, że linie na widmie odpowiadają podstawie, kąty między liniami w widmie i na obrazie są takie same.
+
+5. Cztery maksima widoczne w pobliżu krawędzi widma obrazu marine.png biorą się z występowania na obrazie dużej ilości elementów szybkozmiennych. Po przybliżeni obrazu pierwotnego można zauważyć, że obraz składa się z wielu małych prostokątów.
+
+6. Widmo obrazu jest takiego samego rozmiaru co obraz pierwotny, ponieważ przedział zakresu częstotliwości po transformacji jest taki sam jak wymiary obrazu.
+
+7. Niskie częstotliwości są związne z elementami wolnozmiennymi, natomiast wysokie częstotliwości z szybkozmiennymi.
+
+8. Filtracja górno przepustowa umożliwia wyeliminowanie elementów wolnozmiennych pozostawiając jedynie kontury. Filtracja dolnoprzepustowa usuwa z obrazu krawędzie zaokrąglając elementy na obrazie.
+
+9. Suma filtracji dolno i górnoprzepustowej powinny dać zbliżony obraz do pierwornego, ponieważ częstotliwości, które zostały wycięte z obrazu zostaną przywrócone po sumowaniu. Jednak pojawiają się zafalowania spowodowane efektem Gibbsa.

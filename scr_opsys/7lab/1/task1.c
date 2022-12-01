@@ -1,13 +1,10 @@
 #include <stdio.h>
-#include <unistd.h> 
-#include <string.h> 
-#include <fcntl.h> 
-#include <string.h>
-#include <sys/stat.h>
+#include <unistd.h>
+#include <stdlib.h>
 #include <sys/mman.h>
 #include <sys/types.h>
-#include <pthread.h>
-#include <stdlib.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define BABBLE_NAME "/Y01-42e"
 #define BABBLE_MODE 0777
@@ -21,32 +18,22 @@ struct babblespace {
   char babbles[BABBLE_LIMIT][BABBLE_LENGTH];
 };
 
+int main(){
+  struct babblespace* segment;
+  int fd=shm_open(BABBLE_NAME, O_RDONLY , BABBLE_MODE);
+  if(fd<0){
+    perror("shm_open");
+    printf("%d\n",fd);
 
-int main()
-{
-    struct babblespace * segment;
-    
-    int fd,i;
-    char *addr ,c;
-    fd = shm_open(BABBLE_NAME, O_RDONLY, BABBLE_MODE);
-    int mm;
-    
-    mm = mmap(NULL, BABBLE_LENGTH, PROT_READ, MAP_PRIVATE, MAP_SHARED, NULL);
-
-    if(fd < 0){
-      printf("\nError opening\n");
-    //   exit(-1);
-        printf("%d\n", fd);
-    }
-    printf("%d\n", fd);
-
-    segment = (struct babblespace *) mmap(NULL, sizeof(struct babblespace),PROT_READ,MAP_SHARED,fd,0);
-    if(segment == MAP_FAILED){
-      printf("\nError map\n");
-    //   exit(-1);
-    }
-    printf("%s\n", segment-> babbles[1]);
-    return 0;
-
-
+  }
+  printf("%d\n",fd);
+  segment = (struct babblespace*) mmap(NULL,sizeof(struct babblespace),
+PROT_READ,MAP_SHARED, fd, 0);
+  //segment->babble_total=3;
+  if(segment == MAP_FAILED) perror("map");
+  for(int i;i<5;i++)
+  {
+    printf("%s\n", segment->babbles[i]);
+  }
+  return 0;
 }
