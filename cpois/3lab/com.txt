@@ -1,73 +1,3 @@
-1. Czy transformacja Fouriera jest operacją liniową? Czy w związku z poprzednim jest również odwracalną? Czy można to pokazać eksperymentalnie?
-odp: 
-Transformacja Fouriera jest operacja liniową ponieważ jest to pewien operator liniowy określany na pewnych przestrzeniach funkcyjnych, 
-elementami których mogą być funkcje n zmiennych rzeczywistych. Jest to operacja odwracalan, za przykład może na posłużyć 
-DFT — dyskretna transformata Fouriera, to taka transformata, która działa na sygnałach próbkowanych o skończonej długości, 
-jest operacją odwracalną — co znaczy, że mając transformatę, można wyznaczyć oryginał.
-Na podstawie tych obserwacji możemy wywnioskować, że
-transforamta fouriera jest operacją bezpieczną (nie tracimy, żadnych inforamcji) oraz
-całkowicie odwracalną.
-
-2 i 3. W którym miejscu widma obrazu umiejscowione są niskie, a w którym wysokie częstotliwości? Gdzie na widmie znajduje się składowa stała? 
-Co można powiedzieć o obrazie pierwotnym, gdy jego widmo jest jaśniejsze w centrum
-niż na obrzeżach?
-odp: 
-Badając widmo w centrum znajdziemy składową stała, piksele znajdujące się blisko
-środka przedstawiają niskie częstotliwości - wolnozmienne elementy obrazu, natomiast
-jasne piskele (widma) znajdujące się bliżej krawędzi reprezentują wysokie częstotliwości.
-Tę regłę widać na przykładzie poniższych par obraz-widmo. W spektrum obrazu mewy
-widzimy wiele jasnych pikseli daleko od centrum, co odpowiada wielu gwałtownym krawędziom na obrazie. W widmie piłki znajduje się wiele częstotliwości niskich którym
-odpowiadają wolnozmienne elementy obrazu, oraz jasne piksele blisko składowej stałej
-w widmie. 
-
-4. Uzasadnij pojawienie się ukośnych linii w widmie obrazu ball.png. Dlaczego przebiegają 
-one akurat pod takimi kątami? Podobne kwestie można rozważać dla obrazu cameraman.tif.
-odp: 
-W obrazie widma linie ukośne odpowiadają gwałtownym zmianom - krawędziom na
-obrazie. W przypadku obrazu piłki dwie ukośne linie odpowiadają krawędziom podstawy (linie widma są prostopadłe do krawędzi obrazu), kąt między liniami widma
-odpowiada kątowi między krawędziami obrazu.
-
-5. Skąd biorą się cztery maksima widoczne w pobliżu krawędzi widma obrazu marine.png?
-Dlaczego jest ich cztery, a nie dwa czy jedno? Podobne efekty można zaobserwować na
-widmie obrazu foggysf2.jpg
-odp:
-
-6. Dlaczego widmo obrazu jest tego samego rozmiaru co obraz pierwotny?
-odp: 
-
-Przekształcenia widmowe są pod wieloma względami podobne do filtracji kontekstowych,  z tą jedynie różnicą, 
-że kontekstem wykorzystywanym we wszystkich operacjach jest cały obraz. Technika przekształceń widmowych polega na tym, 
-że najpierw w oparciu o cały obraz obliczane jest dwuwymiarowe widmo obrazu (przy wykorzystaniu transformacji Fouriera), 
-następnie widmo to podlega określonej modyfikacji (np. usuwa się składowe o wysokiej częstotliwości), 
-a następnie dokonywana jest rekonstrukcja obrazu (z użyciem odwrotnej transformacji Fouriera). 
-Taki sposób przetwarzania obrazu pozwala na wyjątkowo precyzyjne kontrolowanie skutków dokonywanych transformacji, 
-jednak z punktu widzenia jakości obrazu nie wnosi istotnie nowej jakości obrazu, a wiąże się ze znacznym obciążeniem komputera
-
-
-7. Z jakimi elementami obrazu pierwotnego związane są niskie, a z jakimi elementami wysokie częstotliwości występujące na obrazie?
-odp: 
-
-Fragmenty obrazu, w których zmiany jasności przebiegają łagodnie zawierają składowe widma o niskich częstotliwościach. 
-Duże częstotliwości przestrzenne wiążą się zatem z występowaniem w obrazie małych i kontrastowych detali, 
-natomiast małe częstotliwości wynikają z istnienia dużych i w miarę jednolitych obszarów.
-
-8. Jakie zastosowanie praktyczne może mieć filtracja dolnoprzepustowa w dziedzinie częstotliwości a jakie filtracja górnoprzepustowa?
-odp: 
-
-Filtr dolnoprzepustowy służy do rozmycia obrazu, przepuszcza on tylko niskie częstotliwości, 
-odcinając wysokie, odpowiedzialne za krawędzie i gwałtowne przejścia
-
-Filtr górno przepustowy wycina wartości niskie oraza składową stałą (przez co obraz
-jest ciemny) pozostawiając jedynie krawędzie oraz elementy szybkozmienne.
-
-9. Czy suma rezultatów filtracji dolnoprzepustowej i górnoprzepustowej powinna w efekcie
-dać obraz pierwotny? Uzasadnij odpowiedź.
-odp: 
-Złożenie obrazów przefiltrowanych dolno i górno daje obraz bardzo zbliżony do pierwotnego,
-pojawiają się jednak pewne zafalowania, które są wynikiem efektu Gibbsa
-
-
-
 Pytania otwarte
 1. Transformacja Furiera jest operacją liniową. Transformacja Furiera jest również operacją odwracalną. Zostało to pokazane w zadaniu 1 gdzie można zauważyć, że histogram obrazu pierwotnego jak i obrazu po odwrotnej transformacie mają taki sam przebieg.
 
@@ -76,14 +6,31 @@ Pytania otwarte
 
 3. Widmo obrazu jest jaśniejsze w centrum niż na obrzeżach dla obrazów wolnozmiennych, ponieważ na środku widma znajdują się niksie częstotliwości. Dodatkowo na środku znajduje sie stała skladowa.
 
-4. Pojawienie się ukośnych linii w widmie obrazu ball.png jest spowodowane występowaniem gwałtownych zmian - krawędzie na obrazie. Można zauważyć, że linie na widmie odpowiadają podstawie, kąty między liniami w widmie i na obrazie są takie same.
+4. W obrazie widma linie ukośne odpowiadają gwałtownym zmianom - krawędziom na
+obrazie. W przypadku obrazu piłki dwie ukośne linie odpowiadają krawędziom podstawy (linie widma są prostopadłe do krawędzi obrazu), kąt między liniami widma
+odpowiada kątowi między krawędziami obrazu.
 
 5. Cztery maksima widoczne w pobliżu krawędzi widma obrazu marine.png biorą się z występowania na obrazie dużej ilości elementów szybkozmiennych. Po przybliżeni obrazu pierwotnego można zauważyć, że obraz składa się z wielu małych prostokątów.
 
-6. Widmo obrazu jest takiego samego rozmiaru co obraz pierwotny, ponieważ przedział zakresu częstotliwości po transformacji jest taki sam jak wymiary obrazu.
+6. Widmo obrazu jest takiego samego rozmiaru co obraz pierwotny, ponieważ przedział zakresu częstotliwości po transformacji jest taki sam jak wymiary obrazu. 
+Przekształcenia widmowe są pod wieloma względami podobne do filtracji kontekstowych,  z tą jedynie różnicą, 
+że kontekstem wykorzystywanym we wszystkich operacjach jest cały obraz. Technika przekształceń widmowych polega na tym, 
+że najpierw w oparciu o cały obraz obliczane jest dwuwymiarowe widmo obrazu (przy wykorzystaniu transformacji Fouriera), 
+następnie widmo to podlega określonej modyfikacji (np. usuwa się składowe o wysokiej częstotliwości), 
+a następnie dokonywana jest rekonstrukcja obrazu (z użyciem odwrotnej transformacji Fouriera). 
+Taki sposób przetwarzania obrazu pozwala na wyjątkowo precyzyjne kontrolowanie skutków dokonywanych transformacji, 
+jednak z punktu widzenia jakości obrazu nie wnosi istotnie nowej jakości obrazu, a wiąże się ze znacznym obciążeniem komputera
 
-7. Niskie częstotliwości są związne z elementami wolnozmiennymi, natomiast wysokie częstotliwości z szybkozmiennymi.
+7. Niskie częstotliwości są związne z elementami wolnozmiennymi, natomiast wysokie częstotliwości z szybkozmiennymi. 
+Fragmenty obrazu, w których zmiany jasności przebiegają łagodnie zawierają składowe widma o niskich częstotliwościach. 
+Duże częstotliwości przestrzenne wiążą się zatem z występowaniem w obrazie małych i kontrastowych detali, 
+natomiast małe częstotliwości wynikają z istnienia dużych i w miarę jednolitych obszarów.
 
-8. Filtracja górno przepustowa umożliwia wyeliminowanie elementów wolnozmiennych pozostawiając jedynie kontury. Filtracja dolnoprzepustowa usuwa z obrazu krawędzie zaokrąglając elementy na obrazie.
+
+8. Filtracja górno przepustowa umożliwia wyeliminowanie elementów wolnozmiennych pozostawiając jedynie kontury. Filtracja dolnoprzepustowa usuwa z obrazu krawędzie zaokrąglając elementy na obrazie. Filtr dolnoprzepustowy służy do rozmycia obrazu, przepuszcza on tylko niskie częstotliwości, 
+odcinając wysokie, odpowiedzialne za krawędzie i gwałtowne przejścia
+
+Filtr górno przepustowy wycina wartości niskie oraza składową stałą (przez co obraz
+jest ciemny) pozostawiając jedynie krawędzie oraz elementy szybkozmienne. 
 
 9. Suma filtracji dolno i górnoprzepustowej powinny dać zbliżony obraz do pierwornego, ponieważ częstotliwości, które zostały wycięte z obrazu zostaną przywrócone po sumowaniu. Jednak pojawiają się zafalowania spowodowane efektem Gibbsa.
