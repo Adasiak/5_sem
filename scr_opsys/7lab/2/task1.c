@@ -21,6 +21,7 @@ struct babblespace {
 
 int main(){
   struct babblespace* segment;
+  char bufor[BABBLE_LENGTH] = "WA";
   int fd=shm_open(BABBLE_NAME, O_RDWR , BABBLE_MODE);
   if(fd<0){
     perror("shm_open");
@@ -42,7 +43,7 @@ int main(){
   {
     printf("%s\n", segment->babbles[i]);
   }
-
+  memcpy(segment->babbles,bufor,BABBLE_LENGTH);
   pthread_mutex_unlock(&segment->babble_mutex);
 
 
