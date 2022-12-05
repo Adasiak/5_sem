@@ -13,7 +13,7 @@
 #define BABBLE_LENGTH 80
 
 struct babblespace {
-  pthread_mutex_t babble_mutex;
+  pthread_mutex_t babble_mutex,m2;
   pthread_cond_t babble_cond;
   int babble_first, babble_total;
   char babbles[BABBLE_LIMIT][BABBLE_LENGTH];
@@ -30,9 +30,9 @@ int main(){
 
   segment = (struct babblespace*) mmap(NULL,sizeof(struct babblespace),
     PROT_READ,MAP_SHARED, fd, 0);
-  //segment->babble_total=3;
   
-//   pthread_mutex_unlock(segment->babble_mutex);
+
+  pthread_mutex_lock(&segment->babble_mutex);
 
     printf("%d\n",segment->babble_first);
     printf("%d\n",segment->babble_total);
@@ -43,7 +43,7 @@ int main(){
     printf("%s\n", segment->babbles[i]);
   }
 
-//   pthread_mutex_unlock(segment->babble_mutex);
+  pthread_mutex_unlock(&segment->babble_mutex);
 
 
 
