@@ -6,6 +6,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <pthread.h>
+#include <string.h>
 
 #define BABBLE_NAME "/Y01-42e" 
 #define BABBLE_MODE 0777
