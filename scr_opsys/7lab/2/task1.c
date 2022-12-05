@@ -21,7 +21,7 @@ struct babblespace {
 
 int main(){
   struct babblespace* segment;
-  int fd=shm_open(BABBLE_NAME, O_RDONLY , BABBLE_MODE);
+  int fd=shm_open(BABBLE_NAME, O_RDWR , BABBLE_MODE);
   if(fd<0){
     perror("shm_open");
     printf("%d\n",fd);
