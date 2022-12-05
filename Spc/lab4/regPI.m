@@ -3,7 +3,8 @@ close all;
 %stabilne dla kp<8, dla kp=8 na granicy stabilnosci
 t=100;
 maxStep=0.05;
-kp=5;
+%kp=5;
+kp=8;
 Ki=5;
 ki=linspace(0.2*Ki, 0.7*Ki,5);
 for i=1:1:max(size(ki))
@@ -17,8 +18,6 @@ for i=1:1:max(size(ki))
     nexttile; 
     %tutaj potrzeba wyswietlic punkt ktory wychodzi z wyliczenia calki
     %oznaczonej z danych w data1
-    %plot();
-    
-    
-    
+    plot(ans.data1); 
 end
+
