@@ -37,7 +37,7 @@ int main(){
   pthread_mutex_unlock(&mutex);
 
   if(segment == MAP_FAILED) perror("map");
-  for(int i;i<segment->babble_total;i++)
+  for(int i;i<13;i++)
   {
     printf("%s\n", segment->babbles[i]);
   }
