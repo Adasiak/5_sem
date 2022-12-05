@@ -27,7 +27,7 @@ int main(){
     printf("%d\n",fd);
 
   }
-  printf("%d\n",fd);
+
   segment = (struct babblespace*) mmap(NULL,sizeof(struct babblespace),
     PROT_READ,MAP_SHARED, fd, 0);
   //segment->babble_total=3;
@@ -36,6 +36,9 @@ int main(){
 
   pthread_mutex_unlock(&mutex);
 
+    printf("%d\n",segment->babble_first);
+    printf("%d\n",segment->babble_total);
+    // segment->babble_total=
   if(segment == MAP_FAILED) perror("map");
   for(int i;i<segment->babble_total;i++)
   {
