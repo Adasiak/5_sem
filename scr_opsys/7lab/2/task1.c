@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-
+#include <pthread.h>
 
 #define BABBLE_NAME "/Y01-42e" 
 #define BABBLE_MODE 0777
@@ -30,8 +30,9 @@ int main(){
 
   segment = (struct babblespace*) mmap(NULL,sizeof(struct babblespace),
     PROT_READ,MAP_SHARED, fd, 0);
+  //segment->babble_total=3;
   
-  pthread_mutex_unlock(segment->babble_mutex);
+//   pthread_mutex_unlock(segment->babble_mutex);
 
     printf("%d\n",segment->babble_first);
     printf("%d\n",segment->babble_total);
@@ -42,7 +43,7 @@ int main(){
     printf("%s\n", segment->babbles[i]);
   }
 
-  pthread_mutex_unlock(segment->babble_mutex);
+//   pthread_mutex_unlock(segment->babble_mutex);
 
 
 
