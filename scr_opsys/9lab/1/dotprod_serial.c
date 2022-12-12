@@ -1,11 +1,3 @@
-/******************************************************************************
-* FILE: dotprod_serial.c
-* DESCRIPTION:
-*   This is a simple serial program which computes the dot product of two
-*   vectors.  The threaded version can is dotprod_mutex.c.
-* SOURCE: Vijay Sonnad, IBM
-* LAST REVISED: 01/29/09 Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

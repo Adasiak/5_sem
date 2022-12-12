@@ -1,13 +1,3 @@
-/*****************************************************************************
-* FILE: bug6.c
-* DESCRIPTION:
-*   This example demonstrates a race condition with a global variable that
-*   gives obviously wrong results. Figure out how to fix the problem - or see
-*   bug6fix.c for one solution. The dotprod_mutex.c example provides a much
-*   more efficient way of solving this problem than bug6fix.c (FYI).
-* SOURCE: 07/06/05 Blaise Barney
-* LAST REVISED: 01/29/09 Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

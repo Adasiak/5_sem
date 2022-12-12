@@ -1,11 +1,3 @@
-/******************************************************************************
-* FILE: bug5.c
-* DESCRIPTION:
-*   A simple pthreads program that dies before the threads can do their
-*   work. Figure out why.
-* AUTHOR: 07/06/05 Blaise Barney
-* LAST REVISED: 07/11/12
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

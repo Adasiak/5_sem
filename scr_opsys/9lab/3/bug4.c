@@ -1,12 +1,3 @@
-/******************************************************************************
-* FILE: bug4.c
-* DESCRIPTION:
-*   This program demonstrates a condition variable race/synchronization
-*   problem. It resembles the condvar.c program. One possible solution can
-*   be found in bug4fix.c
-* SOURCE: 07/06/05 Blaise Barney
-* LAST REVISED: 01/29/09  Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

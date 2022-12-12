@@ -1,12 +1,3 @@
-/******************************************************************************
-* FILE: arrayloops.c
-* DESCRIPTION:
-*   Example code demonstrating decomposition of array processing by
-*   distributing loop iterations.  A global sum is maintained by a mutex
-*   variable.
-* AUTHOR: Blaise Barney
-* LAST REVISED: 01/29/09
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

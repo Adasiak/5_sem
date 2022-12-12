@@ -1,12 +1,3 @@
-/******************************************************************************
-* FILE: hello_arg2.c
-* DESCRIPTION:
-*   A "hello world" Pthreads program which demonstrates another safe way
-*   to pass arguments to threads during thread creation.  In this case,
-*   a structure is used to pass multiple arguments.
-* AUTHOR: Blaise Barney
-* LAST REVISED: 01/29/09
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

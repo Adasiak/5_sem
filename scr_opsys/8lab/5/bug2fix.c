@@ -1,15 +1,3 @@
-/******************************************************************************
-* FILE: bug2fix.c
-* DESCRIPTION:
-*   This is just one way to fix the "hello world" Pthreads program that dumps
-*   core.  Things to note:
-*     - attr variable and its scoping
-*     - use of the pthread_attr_setstacksize routine
-*     - initialization of the attr variable with pthread_attr_init
-*     - passing the attr variable to pthread_create
-* AUTHOR: 9/98 Blaise Barney
-* LAST REVISED: 01/29/09
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

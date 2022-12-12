@@ -1,14 +1,3 @@
-/******************************************************************************
-* FILE: bug1.c
-* DESCRIPTION:
-*   This example has a bug. It is a variation on the condvar.c example.
-*   Instead of just one thread waiting for the condition signal, there are
-*   four threads waiting for the same signal. Find out how to fix the
-*   program. The solution program is bug1fix.c.
-* SOURCE: Adapted from example code in "Pthreads Programming", B. Nichols
-*   et al. O'Reilly and Associates.
-* LAST REVISED: 03/07/17  Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

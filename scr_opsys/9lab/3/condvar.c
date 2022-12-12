@@ -1,17 +1,3 @@
-/******************************************************************************
-* FILE: condvar.c
-* DESCRIPTION:
-*   Example code for using Pthreads condition variables.  The main thread
-*   creates three threads.  Two of those threads increment a "count" variable,
-*   while the third thread watches the value of "count".  When "count"
-*   reaches a predefined limit, the waiting thread is signaled by one of the
-*   incrementing threads. The waiting thread "awakens" and then modifies
-*   count. The program continues until the incrementing threads reach
-*   TCOUNT. The main program prints the final value of count.
-* SOURCE: Adapted from example code in "Pthreads Programming", B. Nichols
-*   et al. O'Reilly and Associates.
-* LAST REVISED: 03/07/17  Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,14 +1,3 @@
-/******************************************************************************
-* FILE: hello32.c
-* DESCRIPTION:
-*   A "hello world" Pthreads program which creates a large number of
-*   threads per process.  A sleep() call is used to insure that all
-*   threads are in existence at the same time.  Each Hello thread does some
-*   work to demonstrate how the OS scheduler behavior affects thread
-*   completion order.
-* AUTHOR: Blaise Barney
-* LAST REVISED: 01/29/09
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

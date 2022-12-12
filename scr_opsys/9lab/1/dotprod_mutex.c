@@ -1,16 +1,3 @@
-/*****************************************************************************
-* FILE: dotprod_mutex.c
-* DESCRIPTION:
-*   This example program illustrates the use of mutex variables
-*   in a threads program. This version was obtained by modifying the
-*   serial version of the program (dotprod_serial.c) which performs a
-*   dot product. The main data is made available to all threads through
-*   a globally accessible  structure. Each thread works on a different
-*   part of the data. The main thread waits for all the threads to complete
-*   their computations, and then it prints the resulting sum.
-* SOURCE: Vijay Sonnad, IBM
-* LAST REVISED: 01/29/09 Blaise Barney
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

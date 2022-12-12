@@ -1,5 +1,3 @@
-//  Adam Jankowiak 252919
-//
 //  Program do łamania haseł
 //
 //  W programie został zaimpementowany:

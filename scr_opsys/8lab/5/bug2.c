@@ -1,11 +1,3 @@
-/******************************************************************************
-* FILE: bug2.c
-* DESCRIPTION:
-*   A "hello world" Pthreads program that dumps core.  Figure out why and
-*   then fix it - or else see the solution bug2fix.c.
-* AUTHOR: 9/98 Blaise Barney
-* LAST REVISED: 01/29/09
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

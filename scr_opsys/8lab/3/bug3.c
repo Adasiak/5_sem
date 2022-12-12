@@ -1,11 +1,3 @@
-/*****************************************************************************
-* FILE: bug3.c
-* DESCRIPTION:
-*   This "hello world" Pthreads program demonstrates an unsafe (incorrect)
-*   way to pass thread arguments at thread creation. Compare with hello_arg1.c.
-* AUTHOR: Blaise Barney
-* LAST REVISED: 07/16/14
-******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
