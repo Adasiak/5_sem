@@ -32,21 +32,6 @@ W programie zostało usunięte rzutowanie wskaźników taskid = *(*long) threadi
 usunięto referencje pthread_create(&threads[t], NULL, PrintHello, (void *) &t); -> pthread_create(&threads[t], NULL, PrintHello, (void *) t);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 4. Kończenie wątków                                             GOTOWE
 gcc -o bug5 bug5.c -lpthread -lm
 Jak można zauważyć program kończy swoje działanie zanim wszystkie wątki zdążą wykonać się do końca. 
