@@ -27,6 +27,7 @@ void *do_work(void *tid)
   double mysum=0.0;
 
   /* Initialize my part of the global array and keep local sum */
+  
   mytid = (int *) tid;
   start = (*mytid * ITERATIONS);
   end = start + ITERATIONS;

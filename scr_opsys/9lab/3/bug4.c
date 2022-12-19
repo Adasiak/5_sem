@@ -23,6 +23,7 @@ void *sub1(void *t)
   /* do some work */
   sleep(1);
   /*
+  
   Lock mutex and wait for signal only if count is what is expected.  Note
   that the pthread_cond_wait routine will automatically and atomically
   unlock mutex while it waits. Also, note that if THRESHOLD is reached

@@ -17,6 +17,7 @@ The following structure contains the necessary information
 to allow the function "dotprod" to access its input data and
 place its output into the structure.  This structure is
 unchanged from the sequential version.
+
 */
 
 typedef struct

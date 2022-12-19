@@ -21,6 +21,7 @@ void *dotprod(void *arg)
   /* Each thread works on a different set of data.
    * The offset is specified by the arg parameter. The size of
    * the data for each thread is indicated by VECLEN.
+   * 
    */
    int i, start, end, offset, len;
    long tid = (long)arg;
