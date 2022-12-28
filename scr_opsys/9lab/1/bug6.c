@@ -3,8 +3,6 @@
 #include <stdlib.h>
 
 
-
-
 /* Define global data where everyone can see them */
 #define NUMTHRDS 8
 #define VECLEN 100000
@@ -13,11 +11,9 @@ long sum=0;
 pthread_mutex_t lock;
 
 
-
-
 void *dotprod(void *arg)
 {
-   pthread_mutex_lock (&lock);                                          // TUTAJ!!
+   pthread_mutex_lock (&lock);                                       
   /* Each thread works on a different set of data.
    * The offset is specified by the arg parameter. The size of
    * the data for each thread is indicated by VECLEN.
@@ -44,7 +40,7 @@ void *dotprod(void *arg)
    sum += mysum;
    printf("thread: %ld done. Global sum now is=%li\n",tid,sum);
 
-    pthread_mutex_unlock (&lock);                                          // TUTAJ!!
+    pthread_mutex_unlock (&lock);                                         
    pthread_exit((void*)0);
 }
 
@@ -68,7 +64,7 @@ for (i=0; i<VECLEN*NUMTHRDS; i++)
  * routine. Their offset into the global vectors is specified by passing
  * the "i" argument in pthread_create().
  */
-pthread_mutex_init(&lock,NULL);                                               // TUTAJ!
+pthread_mutex_init(&lock,NULL);                                            
 pthread_attr_init(&attr);
 pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 for(i=0; i<NUMTHRDS; i++){

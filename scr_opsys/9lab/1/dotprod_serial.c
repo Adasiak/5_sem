@@ -1,12 +1,9 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 // in order to measure the time
 #include <time.h>
 
-/*
-*/
 
 double get_actual_time_in_us()
 {
@@ -15,11 +12,9 @@ double get_actual_time_in_us()
     return now.tv_sec*1e6 + now.tv_nsec*1e-3;
 }
 
-
 /*
 The following structure contains the necessary information
 to allow the function "dotprod" to access its input data and
-
 place its output so that it can be accessed later.
 */
 

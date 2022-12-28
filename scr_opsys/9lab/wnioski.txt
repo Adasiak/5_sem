@@ -1,7 +1,11 @@
 1. Muteksy                                      GOTOWE
-Program dotprod nie tworzy nowch wątków. Program można zoptymalizować poprzez dodanie wątków. Czas przed dodaniem wątków wynosił około 13609ms. Po dodaniu wątków ten czas zmniejszył się do 172ms. Dla 2 wątków ten czas wzrósł do 200ms. Dla 4 wątków czas wynosi już 434ms. Uzyskane wyniki są znacznie lepsze od oryginalu.
+Program dotprod nie tworzy nowch wątków. Program można zoptymalizować poprzez dodanie wątków. 
+Czas przed dodaniem wątków wynosił około 13609ms. 
+Po dodaniu wątków ten czas zmniejszył się do 172ms. Dla 2 wątków ten czas wzrósł do 200ms. 
+Dla 4 wątków czas wynosi już 434ms. Uzyskane wyniki są znacznie lepsze od oryginalu.
 
-bug6.c - Jak można zauważyć wątki nie są wykonywane w odpowiedniej kolejności. Dodatkowo suma po wykonaniu wątku jest niepoprawna. Jest to spowodowane wyścigami -  brakiem mutexów. Należy dodać funkcje:
+bug6.c - Jak można zauważyć wątki nie są wykonywane w odpowiedniej kolejności. Dodatkowo suma po wykonaniu wątku jest niepoprawna. 
+Jest to spowodowane wyścigami -  brakiem mutexów. Należy dodać funkcje:
 w funkcji *dotprod()
 - pthread_mutex_lock()
 - pthread_mutex_unlock()
@@ -12,20 +16,62 @@ w funkcji main()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 2. Porównanie                                   GOTOWE
 dotprod_mutex.c w odróżnieniu od mojego programu wykorzystuje strukturę.
 
-dotprod_mutex.c - program jest szybszy od arrayloops.c, wykorzystje strukturę w której jest zapisywana suma wykonanych mnożeń. Program dynamicznie alokuje pamięć, po wykonaniu obliczeń dla danego wątku zwalnia pamięć przez co program nie jest "pamięciożerny". Każdy wątek tworzy własną tablicę o określonym rozmiarze.
+dotprod_mutex.c - program jest szybszy od arrayloops.c, wykorzystje strukturę w której jest zapisywana suma wykonanych mnożeń. 
+Program dynamicznie alokuje pamięć, po wykonaniu obliczeń dla danego wątku zwalnia pamięć przez co program nie jest "pamięciożerny". 
+Każdy wątek tworzy własną tablicę o określonym rozmiarze.
 
 
 
-arrayloops.c - program jest wolniejszy od dotprod_mutex.c, wykorzystuje on tablice w której zapisywana jest suma kolejnych operacji uwzględniając numer danej operacji. Program przez cały czas działania zapisuje wyniki w tablicy przez co zużywa więcej pamięci. Wszystkie wątki korzystają z jednej globalnej tablicy.
+arrayloops.c - program jest wolniejszy od dotprod_mutex.c,
+ wykorzystuje on tablice w której zapisywana jest suma kolejnych operacji uwzględniając numer danej operacji. 
+ Program przez cały czas działania zapisuje wyniki w tablicy przez co zużywa więcej pamięci. 
+ Wszystkie wątki korzystają z jednej globalnej tablicy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 3. Zmienne warunkowe                            GOTOWE
-Program bug1.c po pewnym czasie zawiesza się. Powodem takiego błędu jest za duża ilość wątków obsługujących funkcje watch_count. Po pozostawieniu jednej funkcji watch_count program zaczyna poprawnie funkcjonować. Jest to spowodowane za dużą ilością wait-ów.
+Program bug1.c po pewnym czasie zawiesza się. Powodem takiego błędu jest za duża ilość wątków obsługujących funkcje watch_count. 
+Po pozostawieniu jednej funkcji watch_count program zaczyna poprawnie funkcjonować. Jest to spowodowane za dużą ilością wait-ów.
 
 bug4.c - Należy dodać funkcję if(count < THRESHOLD) w funkcji *sub1().
 
-W celu wyeliminowania błędu można także zamienić funkcję pthread_cond_wait() w sub1() z funkcją pthread_cond_signal w sub2(). - uzyskany wynik działania programu już nie musi być poprawny ale program się nie zawiesza.
+W celu wyeliminowania błędu można także zamienić funkcję pthread_cond_wait() w sub1() z funkcją pthread_cond_signal w sub2().
+ - uzyskany wynik działania programu już nie musi być poprawny ale program się nie zawiesza.
 
