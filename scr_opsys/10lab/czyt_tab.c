@@ -63,7 +63,7 @@ printf("Flaga3\n");
             tab[licznik][j] = c;
             j++;
             if(c == '\n'){
-                //printf("%s",tab[licznik]);
+                printf("%s",tab[licznik]);
                 licznik++;
                 j = 0;
             }
