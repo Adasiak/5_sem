@@ -7,7 +7,7 @@ int main(){
     int c;
     int licznik = 0;
     FILE *file;
-    file = fopen("words_alpha.txt","r");
+    file = fopen("hasla_2.txt","r");
     if(file){
         while((c = getc(file)) != EOF){
             putchar(c);
