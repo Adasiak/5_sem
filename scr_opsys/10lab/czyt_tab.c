@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define NAZWA "test.txt"
+#define NAZWA "hasla_2.txt"
 //
 
 int dlug = 0;
@@ -47,13 +47,10 @@ int main(){
 
     FILE *file;
 
-    printf("Flaga1\n");
     tab = malloc(num*sizeof(char*));
-    printf("Flaga2\n");
     for(int i = 0; i < num; i++){
         tab[i] = malloc((ID + 1)*sizeof(char));
     }
-printf("Flaga3\n");
 
     file = fopen(NAZWA,"r");
     if(file){
