@@ -15,23 +15,6 @@ w funkcji main()
 - pthread_mutex_destroy()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 2. Porównanie                                   GOTOWE
 dotprod_mutex.c w odróżnieniu od mojego programu wykorzystuje strukturę.
 
@@ -45,24 +28,6 @@ arrayloops.c - program jest wolniejszy od dotprod_mutex.c,
  wykorzystuje on tablice w której zapisywana jest suma kolejnych operacji uwzględniając numer danej operacji. 
  Program przez cały czas działania zapisuje wyniki w tablicy przez co zużywa więcej pamięci. 
  Wszystkie wątki korzystają z jednej globalnej tablicy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

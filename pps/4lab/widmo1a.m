@@ -1,6 +1,7 @@
 % skrypt wyznacza widmo amplitudowe i fazowe
 % sygnalu bedacego suma dwoch sinusoid
-clear all; close all;
+% clear all; 
+close all;
 f1=10;	% czestotliwosc pierwszej sinosoidy
 A1=10;		% amplituda pierwszej sinusoidy
 phi1=0;	% faza pierwszej sinusoidy
@@ -20,8 +21,8 @@ Nf=100;     % d?ugo?? transformacji Fouriera
 t=0:1/fp:(N-1)/fp;
 
 % generuj sygnal
-%x=A1*sin(2*pi*f1*t+phi1)+A2*sin(2*pi*f2*t+phi2);
-x=A1*sin(2*pi*f1*t+phi1);
+x=A1*sin(2*pi*f1*t+phi1)+A2*sin(2*pi*f2*t+phi2);
+% x=A1*sin(2*pi*f1*t+phi1);
 
 subplot (311);
 plot (t,x);
