@@ -23,7 +23,7 @@
 #include <signal.h>
 #include <pthread.h>
 
-#define SLOWNIK "words_alpha.txt"
+#define SLOWNIK "test.txt"
 #define HASLA   "hasla_2.txt"
 //#define HASLA   "hasla12.txt"
 
