@@ -12,6 +12,7 @@
 //      Zadanie zostało wykonane w podstawowej wersji bez dodatkowych wymagań.
 //
 //
+// 
 
 #define _GNU_SOURCE
 #include <stdio.h>

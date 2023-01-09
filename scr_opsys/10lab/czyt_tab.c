@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 #define NAZWA "words_alpha.txt"
-
+// 
 
 int dlug = 0;
 
