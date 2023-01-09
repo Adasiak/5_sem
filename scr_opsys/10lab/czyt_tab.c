@@ -57,7 +57,7 @@ int main(){
     file = fopen(NAZWA,"r");
     if(file){
         while((c = getc(file)) != EOF){
-            //putchar(c);
+            putchar(c);
             tab[licznik][j] = c;
             j++;
             if(c == '\n'){
