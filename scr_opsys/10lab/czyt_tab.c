@@ -14,18 +14,29 @@ int policz(){
     int chr;
     int m = 0;
 
+    int nslow=0;
+    char slow[512][100];
+    char buf[1024];
+
+
     f = fopen(NAZWA,"r");
     if(f){
-        while((chr = getc(f)) != EOF){
-            m++;
-            if(chr == '\n'){
-               l++;
-               if(m > dlug){
-                   dlug = m;
-               }
-               m = 0;
-            }
+        while(fgets(buf,sizeof(buf),f)!=NULL){
+            sscanf(buf,"%s",slow[nslow++]);
+        
         }
+        
+        
+        // while((chr = getc(f)) != EOF){
+        //     m++;
+        //     if(chr == '\n'){
+        //        l++;
+        //        if(m > dlug){
+        //            dlug = m;
+        //        }
+        //        m = 0;
+        //     }
+        // }
         fclose(f);
     }
     printf("policz() - %d\n",l);
