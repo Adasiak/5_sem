@@ -21,22 +21,22 @@ int policz(){
 
     f = fopen(NAZWA,"r");
     if(f){
-        while(fgets(buf,sizeof(buf),f)!=NULL){
-            sscanf(buf,"%s",slow[nslow++]);
+        // while(fgets(buf,sizeof(buf),f)!=NULL){
+        //     sscanf(buf,"%s",slow[nslow++]);
         
-        }
-        
-        
-        // while((chr = getc(f)) != EOF){
-        //     m++;
-        //     if(chr == '\n'){
-        //        l++;
-        //        if(m > dlug){
-        //            dlug = m;
-        //        }
-        //        m = 0;
-        //     }
         // }
+        
+        
+        while((chr = getc(f)) != EOF){
+            m++;
+            if(chr == '\n'){
+               l++;
+               if(m > dlug){
+                   dlug = m;
+               }
+               m = 0;
+            }
+        }
         fclose(f);
     }
     printf("policz() - %d\n",l);
