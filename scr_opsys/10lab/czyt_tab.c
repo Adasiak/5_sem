@@ -70,7 +70,7 @@ int main(){
     //printf("Naliczylo %d, Koniec!\n",licznik);
     //printf("dlugosc - %d, liczba wierszy - %d\n",dlug,num);
 
-    printf("%s",tab[1]);
+    // printf("%s",tab[1]);
 
     free(tab);
 
