@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define NAZWA "hasla_2.txt"
+#define NAZWA "test.txt"
 // 
 
 int dlug = 0;
