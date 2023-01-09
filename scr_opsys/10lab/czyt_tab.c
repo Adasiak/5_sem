@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 #define NAZWA "test.txt"
-// 
+//
 
 int dlug = 0;
 
@@ -47,20 +47,23 @@ int main(){
 
     FILE *file;
 
-
+    printf("Flaga1\n");
     tab = malloc(num*sizeof(char*));
+    printf("Flaga2\n");
     for(int i = 0; i < num; i++){
         tab[i] = malloc((ID + 1)*sizeof(char));
     }
-
+printf("Flaga3\n");
 
     file = fopen(NAZWA,"r");
     if(file){
         while((c = getc(file)) != EOF){
-            putchar(c);
+
+            //putchar(c);
             tab[licznik][j] = c;
             j++;
             if(c == '\n'){
+                //printf("%s",tab[licznik]);
                 licznik++;
                 j = 0;
             }
@@ -69,8 +72,7 @@ int main(){
     }
     //printf("Naliczylo %d, Koniec!\n",licznik);
     //printf("dlugosc - %d, liczba wierszy - %d\n",dlug,num);
-
-    // printf("%s",tab[1]);
+    for(int i = 0; i < licznik; i++) printf("%s",tab[i]);
 
     free(tab);
 
