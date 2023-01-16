@@ -23,8 +23,8 @@
 #include <signal.h>
 #include <pthread.h>
 
-#define SLOWNIK "test.txt"
-#define HASLA   "hasla_2.txt"
+#define SLOWNIK "Slownik.txt"
+#define HASLA   "Hasla.txt"
 //#define HASLA   "hasla12.txt"
 
 #define SIZE 33

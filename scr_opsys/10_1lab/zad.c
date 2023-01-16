@@ -161,15 +161,14 @@ void* JednoSlowoProd(void* arg){
 
 int main(){
 
-char* md5test;
-WczytajSlowa();
-int dlugosctest=strlen(Slowa[1]);
-bytes2md5(Slowa[1], dlugosctest, md5test);
+	char* md5test;
+	WczytajSlowa();
+	int dlugosctest=strlen(Slowa[1]);
+	bytes2md5(Slowa[1], dlugosctest, md5test);
 
-printf("Slowo: %s\n", Slowa[1]);
-printf("MD5: %s\n", md5test);
+	printf("Slowo: %s\n", Slowa[1]);
+	printf("MD5: %s\n", md5test);
 
 
-
-return 0;
+	return 0;
 }

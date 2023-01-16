@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.json": "cpp",
+        "signal.h": "c"
+    }
+}
