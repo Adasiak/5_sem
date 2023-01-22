@@ -4,23 +4,24 @@
 #include <fcntl.h>
 #include <openssl/evp.h>
 #include <signal.h>
+#include <ctype.h>
 
 #define NUM_PASSWORDS 1000
 #define LENGTH 33
 #define WORD_FILENAME "Slownik.txt"
 #define NUM_THREADS 6
 
-int NumOfWords=0;
-char **Words;
-int NumOfFindedPasswords=0;
-int FindedPasswordId;
-int BaseRestart=0;
-
 pthread_mutex_t FindedPassword_mutex;
 pthread_cond_t  FindedPassword_cond;
 pthread_barrier_t Restart_barrier;
 pthread_barrier_t Start_barrier;
 pthread_mutex_t Restart_mutex;
+
+int NumOfWords=0;
+char **Words;
+int NumOfFindedPasswords=0;
+int FindedPasswordId;
+int BaseRestart=0;
 
 struct Passwords_base{
     int id;
@@ -45,6 +46,17 @@ void bytes2md5(const char *data, int len, char *md5buf) {
 	}
 }
 
+void ClearBase(){
+    for(int i=0;i<NUM_PASSWORDS;i++){
+        Base[i].id=0;
+        Base[i].Checked=0;
+        strcpy(Base[i].Password,"");
+        strcpy(Base[i].Mail,"");
+        strcpy(Base[i].Name,"");
+        strcpy(Base[i].RealPassword,"");
+    }
+}
+
 void DownloadPasswords(char *Filename){
     FILE *passwordFile;
     passwordFile=fopen(Filename, "rt");
@@ -57,29 +69,18 @@ void DownloadPasswords(char *Filename){
     else{
         printf("Plik: %s nie został otwarty\n",Filename);
     }
-
+    
     fclose(passwordFile);
 }
 
-void ClearBase(){
-    for(int i=0;i<NUM_PASSWORDS;i++){
-    Base[i].id=0;
-    Base[i].Checked=0;
-    strcpy(Base[i].Password,"");
-    strcpy(Base[i].Mail,"");
-    strcpy(Base[i].Name,"");
-    strcpy(Base[i].RealPassword,"");
-    }
-}
 
 
 void DownloadWords(){
     FILE *wordFile;
     char bin;
 
-
     wordFile=fopen(WORD_FILENAME, "rt");
-
+    
     //Znalezienie liczby słów w słowniku
     for(bin=getc(wordFile); bin!=EOF; bin=getc(wordFile)){
         if(bin=='\n'){
@@ -126,7 +127,7 @@ void GenerateNumberString(char *String, int Number, int Length){
         for(i=0;i<Length-NumLength; i++){
             String[i]='0';
         }
-
+    
         for(i; i<Length;i++){
             String[i]=NumberString[i-(Length-NumLength)];
         }
@@ -148,8 +149,8 @@ void* OneWordProd(void *arg){
     int  Length=1;
     strcpy(Prefix,"");
     strcpy(Postfix,"");
-
-
+    
+    
     while(1){
         for(i=0; i<NumOfWords; i++){
             //Tworzenie potencjalnego hasla
@@ -164,7 +165,7 @@ void* OneWordProd(void *arg){
                 break;
                 case 2:
                 for(j=0;j<strlen(Word);j++){
-		            Word[j]=(char)toupper(Word[j]);
+		  Word[j]=(char)toupper(Word[j]);
                 }
                 break;
             }
@@ -189,8 +190,8 @@ void* OneWordProd(void *arg){
             }
             }
         }
-
-
+        
+        
         //POLACZONY PREFIX I POSTFIX
         if(Length>=PostfixSize){
             ++PostfixSize;
@@ -212,7 +213,7 @@ void* OneWordProd(void *arg){
             ++Length;
             Limit=Limit*10;
         }
-
+        
         if(BaseRestart!=0){
          pthread_barrier_wait(&Restart_barrier);
          pthread_mutex_lock(&Restart_mutex);
@@ -221,7 +222,7 @@ void* OneWordProd(void *arg){
          //Restartowanie wątku
          i=j=k=0;
          bufSize=10;
-         PrefixSize=5;
+         PrefixSize=5; 
          PostfixSize=5;
          strcpy(Prefix,"");
          strcpy(Postfix,"");
@@ -235,7 +236,7 @@ void* OneWordProd(void *arg){
          Length=1;
          pthread_barrier_wait(&Start_barrier);
         }
-
+        
     }
 }
 
@@ -256,35 +257,35 @@ int Word1Length, Word2Length;
             switch(ProdNumber){
                 //Małe litery. Spacja pomiedzy słowami
                 case 0:
-                strcpy(buf,"");
-                strcat(buf,Word1);
-                strcat(buf," ");
-                strcat(buf,Word2);
-                break;
+                    strcpy(buf,"");
+                    strcat(buf,Word1);
+                    strcat(buf," ");
+                    strcat(buf,Word2);
+                    break;
                 //Pierwsza duza litera w obu słowach, spacja pomiedzy
                 case 1:
-		  Word1[0]=(char)toupper(Word1[0]);
-		  Word2[0]=(char)toupper(Word2[0]);
-                strcpy(buf,"");
-                strcat(buf,Word1);
-                strcat(buf," ");
-                strcat(buf,Word2);
-                break;
+		             Word1[0]=(char)toupper(Word1[0]);
+		            Word2[0]=(char)toupper(Word2[0]);
+                    strcpy(buf,"");
+                    strcat(buf,Word1);
+                        strcat(buf," ");
+                    strcat(buf,Word2);
+                    break;
                 //Duze litery. Podkreślnik pomiedzy słowami
                 case 2:
-                Word1Length=strlen(Word1);
-                for(k=0;k<Word1Length;k++){
-		  Word1[k]=(char)toupper(Word1[k]);
-                }
-                Word2Length=strlen(Word2);
-                for(k=0;k<Word2Length;k++){
-		  Word2[k]=(char)toupper(Word2[k]);
-                }
-                strcpy(buf,"");
-                strcat(buf,Word1);
-                strcat(buf,"_");
-                strcat(buf,Word2);
-                break;
+                    Word1Length=strlen(Word1);
+                    for(k=0;k<Word1Length;k++){
+                        Word1[k]=(char)toupper(Word1[k]);
+                    }
+                    Word2Length=strlen(Word2);
+                    for(k=0;k<Word2Length;k++){
+                            Word2[k]=(char)toupper(Word2[k]);
+                    }
+                    strcpy(buf,"");
+                    strcat(buf,Word1);
+                    strcat(buf,"_");
+                    strcat(buf,Word2);
+                    break;  
             }
             if(BaseRestart==0){
             for(l=0;l<NUM_PASSWORDS;l++){
@@ -304,7 +305,7 @@ int Word1Length, Word2Length;
             }
 
         }
-
+        
          if(BaseRestart!=0){
             pthread_barrier_wait(&Restart_barrier);
             pthread_mutex_lock(&Restart_mutex);
@@ -317,13 +318,13 @@ int Word1Length, Word2Length;
             strcpy(buf,"");
             pthread_barrier_wait(&Start_barrier);
         }
-
+        
     }
 }
-
+    
 void* Consument(void *arg){
     while(1){
-
+        
         pthread_mutex_lock(&FindedPassword_mutex);
         pthread_cond_wait(&FindedPassword_cond, &FindedPassword_mutex);
         printf("Password for: %s is %s\n", Base[FindedPasswordId].Mail, Base[FindedPasswordId].RealPassword);
@@ -337,7 +338,7 @@ void SumUp(){
 }
 
 int main(){
-
+    
     signal(SIGHUP, SumUp);
 
     DownloadPasswords("Hasla.txt");
@@ -363,8 +364,8 @@ int main(){
     pthread_create(&threads[4], &attr, TwoWordsProd, (void *)1);
     pthread_create(&threads[5], &attr, TwoWordsProd, (void *)2);
     pthread_create(&threads[6], &attr, Consument, NULL);
-
-
+    
+    
     while(strcmp(Filename,"exit")){
     scanf("%s",Filename);
     if(strcmp(Filename,"exit")){

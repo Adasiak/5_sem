@@ -128,7 +128,8 @@ void GenerujNumerString(char* String, int Numer, int Dlugosc){
 		}
 
 		for(i; i<Dlugosc; i++){
-			String[i]=NumerString[i-Numdlugosc)};
+			int j = i - NumDlugosc;
+			String[i]=NumerString[j];
 		}
 		String[i]='\0';
 	}

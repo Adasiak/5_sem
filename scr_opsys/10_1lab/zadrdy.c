@@ -133,8 +133,8 @@ void GenerujNumerString(char* String, int Numer, int Dlugosc){
 		}
 		String[i]='\0';
 	}
-
 }
+
 void* JednoSlowoProd(void* arg){
 	long ProdNumer= (long)arg;
 	int i,j,k;
@@ -361,6 +361,9 @@ int main(){
     pthread_create(&threads[4], &attr, DwaSlowaProd, (void *)1);
     pthread_create(&threads[5], &attr, DwaSlowaProd, (void *)2);
     pthread_create(&threads[6], &attr, Konsument, NULL);
+    // pthread_create(&threads[1], &attr, Konsument, NULL);
+    // pthread_create(&threads[2], &attr, Konsument, NULL);
+
 
 	while(strcmp(Filename,"exit")){
     scanf("%s",Filename);
@@ -390,21 +393,3 @@ int main(){
     pthread_exit(NULL);
 }
 
-
-
-
-
-
-/*
-char* md5test;
-WczytajSlowa();
-int dlugosctest=strlen(Slowa[1]);
-bytes2md5(Slowa[1], dlugosctest, md5test);
-
-printf("Slowo: %s\n", Slowa[1]);
-printf("MD5: %s\n", md5test);
-
-
-return 0;
-}
-*/
