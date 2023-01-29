@@ -1,5 +1,0 @@
-X100
-Liczba nice umożliwia użytkownikom/programistom wpływanie na planowanie procesów w systemie
-TAK
-NIE
-BRAK ODPOWIEDZI

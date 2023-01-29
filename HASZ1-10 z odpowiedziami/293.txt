@@ -1,5 +1,0 @@
-X100
-Dyscyplina stosowa polega na dealokowaniu przydzielonych bloków pamięci w odwrotnej kolejności do ich przydzielania.
-TAK
-NIE
-BRAK ODPOWIEDZI

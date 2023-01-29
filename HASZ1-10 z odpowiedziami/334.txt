@@ -1,6 +1,0 @@
-X100
-Implementacja I/O wykorzystująca przerwania daje następujące korzyści: w tym czasie Procesor może wykonywać inne procesy, nawet ten sam proces, jeśli nie wymaga on oczekiwania na koniec operacji.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

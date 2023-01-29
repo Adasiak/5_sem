@@ -1,5 +1,0 @@
-X010
-Procesy korzystajace z pamieci wspoldzielonej moga miec te sama tablice stron.
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X100
-W porównaniu z pojedynczym dyskiem schemat RAID 1 poprawia czas odczytu ale pogarsza czas zapisu
-TAK
-NIE
-BRAK ODPOWIEDZI

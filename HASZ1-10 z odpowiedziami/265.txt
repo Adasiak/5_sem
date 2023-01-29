@@ -1,5 +1,0 @@
-X100
-Gdy przenosimy kod programu w trakcie jego działania wymagane jest wsparcie sprzętowe dla przeliczania wszystkich adresów względem adresu początkowego programu (uprościć)
-TAK
-NIE
-BRAK ODPOWIEDZI

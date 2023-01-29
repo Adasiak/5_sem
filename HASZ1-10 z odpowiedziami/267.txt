@@ -1,5 +1,0 @@
-X100
-W przypadku wiązania na etapie kompilacji adres fizyczny jest identyczny z logicznym
-TAK
-NIE
-BRAK ODPOWIEDZI

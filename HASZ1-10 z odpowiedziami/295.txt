@@ -1,5 +1,0 @@
-X100
-Obsługa błędu strony (page fault) wymaga sprowadzenia brakującej strony z obszaru wymiany na dysku do pamięci fizycznej.
-TAK
-NIE
-BRAK ODPOWIEDZI

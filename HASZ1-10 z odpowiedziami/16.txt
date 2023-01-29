@@ -1,5 +1,0 @@
-X010
-Zwykły proces w systemie Unix otrzymuje priorytet, którego nie może sam zmienić.
-TAK
-NIE
-BRAK ODPOWIEDZI

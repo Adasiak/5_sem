@@ -1,5 +1,0 @@
-X100
-Tik - okres czasu administrowania systemu.
-TAK
-NIE
-BRAK ODPOWIEDZI

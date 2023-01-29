@@ -1,5 +1,0 @@
-X100
-Barierę można wykorzystać do jednoczesnego uruchamiania kilku wątków lub procesów 
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X100
-Przekroczenie (overrun) timera może być spowodowane zbyt długim wykonywaniem się jakiejś procedury programu.
-TAK
-NIE
-BRAK ODPOWIEDZI

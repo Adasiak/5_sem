@@ -1,5 +1,0 @@
-X100
-Stronicowanie jest procesem ściągania z dysku potrzebnych stron pamięci wirtualnej.
-TAK
-NIE
-BRAK ODPOWIEDZI

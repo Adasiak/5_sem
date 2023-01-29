@@ -1,5 +1,0 @@
-X010
-Przekroczenie (overrun) timera może być spowodowane ustawieniem zbyt długiego czasu na timerze.
-TAK
-NIE
-BRAK ODPOWIEDZI

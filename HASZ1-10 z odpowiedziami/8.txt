@@ -1,5 +1,0 @@
-X010
-Rolą powłoki (shell) jest ochrona jądra przed niepożądanym zachowaniem programów aplikacyjnych.
-TAK
-NIE
-BRAK ODPOWIEDZI

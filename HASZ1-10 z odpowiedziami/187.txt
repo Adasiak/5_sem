@@ -1,5 +1,0 @@
-X100
-Strategia planowania RR (Round Robin) dokonuje wywłaszczeń co kwant czasu. 
-TAK
-NIE
-BRAK ODPOWIEDZI

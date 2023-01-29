@@ -1,6 +1,0 @@
-X100
-Jedną z funkcji procesów w systemie unix jest zapewnienie wzajemnej izolacji wykonywanych w systemie zadań
-
-TAK
-NIE
-BRAK ODPOWIEDZI

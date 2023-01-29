@@ -1,5 +1,0 @@
-X100
-Numerowanie zasobów pozwala na zapobieganie zakleszczeniom (unikanie zakleszczeń).
-TAK
-NIE
-BRAK ODPOWIEDZI

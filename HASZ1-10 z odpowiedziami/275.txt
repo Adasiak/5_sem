@@ -1,5 +1,0 @@
-X010
-Metoda pierwszego dopasowania alokacji ciągłej wymaga większego nakładu pracy niż metoda najlepszego dopasowania
-TAK
-NIE
-BRAK ODPOWIEDZI

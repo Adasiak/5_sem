@@ -1,6 +1,0 @@
-X100
-Funkcje systemowe generujące efekty globalne mogą prowadzić do powstawania błędów w programach z wątkami.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

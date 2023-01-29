@@ -1,5 +1,0 @@
-X100
-Ekspedytor odpowiada za wykonywanie wyroków planisty.
-TAK
-NIE
-BRAK ODPOWIEDZI

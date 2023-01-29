@@ -1,6 +1,0 @@
-X010
-Zasoby w systemie Unix istnieją w celu zwiększenia wydajności wykonywania procesów.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

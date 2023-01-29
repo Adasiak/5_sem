@@ -1,5 +1,0 @@
-X010
-W porównaniu z pojedynczym dyskiem schemat RAID 0 poprawia czas odczytu ale pogarsza czas zapisu
-TAK
-NIE
-BRAK ODPOWIEDZI

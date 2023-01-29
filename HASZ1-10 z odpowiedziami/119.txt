@@ -1,5 +1,0 @@
-X100
-Mutex jest zmienną logiczną, której funkcje obsługi muszą być implementowane przez system operacyjny
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X100
-Sekcją krytyczną nazywamy fragment programu, wykonujący na danych globalnych operacje mogące przy współbieżności prowadzić do wyścigów
-TAK
-NIE
-BRAK ODPOWIEDZI

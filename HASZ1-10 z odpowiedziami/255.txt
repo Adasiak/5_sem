@@ -1,5 +1,0 @@
-X010
-Proces zamiany adresów fizycznych na logiczne nazywa się translacja adresów
-TAK
-NIE
-BRAK ODPOWIEDZI

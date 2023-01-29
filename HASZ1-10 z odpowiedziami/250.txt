@@ -1,5 +1,0 @@
-X100
-Informacje służące do ochrony pamięci mogą być zawarte w tablicy stron
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X010
-Adresy logiczne obliczane są w trakcie kompilacji
-TAK
-NIE
-BRAK ODPOWIEDZI

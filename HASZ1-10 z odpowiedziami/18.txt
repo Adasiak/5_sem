@@ -1,6 +1,0 @@
-X100
-Priorytety w systemie operacyjnym istnieją w celu kontrolowania dostępu do zasobów systemu.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

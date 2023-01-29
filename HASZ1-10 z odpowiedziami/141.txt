@@ -1,5 +1,0 @@
-X100
-Ochrona sekcji krytycznej muteksem polega na zablokowaniu muteksu na czas jej wykonania
-TAK
-NIE
-BRAK ODPOWIEDZI

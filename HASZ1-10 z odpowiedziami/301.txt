@@ -1,5 +1,0 @@
-X010
-Semantyka kopii oznacza że dane wykorzystane w operacji I-O są identyczne z aktualnymi danymi
-TAK
-NIE
-BRAK ODPOWIEDZI

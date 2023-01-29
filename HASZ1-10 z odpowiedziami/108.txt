@@ -1,5 +1,0 @@
-X100
-Zmienna warunkowa służy do sygnalizacji spełnienia warunków oczekującym na niej wątkom lub procesom
-TAK
-NIE
-BRAK ODPOWIEDZI

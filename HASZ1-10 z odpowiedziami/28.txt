@@ -1,6 +1,0 @@
-X010
-Zasoby w systemie unix istnieją w celu ułatwienia zarządzania elementami systemu w odniesieniu do procesów (TUTAJ NIE JESTEŚMY PEWNI ODPOWIEDZI).
-
-TAK
-NIE
-BRAK ODPOWIEDZI

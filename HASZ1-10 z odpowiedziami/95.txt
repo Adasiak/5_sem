@@ -1,5 +1,0 @@
-X010
-Obsługa wątków użytkownika (tworzenie, przełączanie) typowo trwa dłużej niż obsługa wątków jądra.
-TAK
-NIE
-BRAK ODPOWIEDZI

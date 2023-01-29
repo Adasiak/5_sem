@@ -1,5 +1,0 @@
-X010
-Zbiorem roboczym procesu nazywamy jego całkowitą alokację pamięci wirtualnej.
-TAK
-NIE
-BRAK ODPOWIEDZI

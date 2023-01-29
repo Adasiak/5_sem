@@ -1,5 +1,0 @@
-X100
-Interfejs nowoczesny funkcji czasu POSIX rozszerza interfejs tradycyjny, który jest przestarzały i niewystarczający.
-TAK
-NIE
-BRAK ODPOWIEDZI

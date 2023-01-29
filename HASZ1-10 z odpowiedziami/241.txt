@@ -1,5 +1,0 @@
-X010
-Opóźnieniem (latency) timera nazywamy błąd wynikający z kumulowania się w pracy cyklicznej drobnych błędów.
-TAK
-NIE
-BRAK ODPOWIEDZI

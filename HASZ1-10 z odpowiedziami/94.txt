@@ -1,5 +1,0 @@
-X100
-Obsługa sygnałów w programach wielowątkowych wymaga innego podejścia niż w programach bez wątków.
-TAK
-NIE
-BRAK ODPOWIEDZI

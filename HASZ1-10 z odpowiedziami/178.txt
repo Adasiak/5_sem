@@ -1,5 +1,0 @@
-X100
-Narzut czasowy na przełączanie kontekstu zależy od stosowanej przez system operacyjny strategii szeregowania. 
-TAK
-NIE
-BRAK ODPOWIEDZI

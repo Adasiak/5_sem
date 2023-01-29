@@ -1,5 +1,0 @@
-X100
-W systemach ciągłej alokacji pamięci istnieje zjawisko fragmentacji zewnętrznej.
-TAK
-NIE
-BRAK ODPOWIEDZI

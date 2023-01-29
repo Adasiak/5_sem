@@ -1,5 +1,0 @@
-X100
-Procesy są tworzone w celu podziału obliczeń na wiele (quasi) równolegle wykonywanych zadań
-TAK
-NIE
-BRAK ODPOWIEDZI

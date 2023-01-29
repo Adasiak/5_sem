@@ -1,5 +1,0 @@
-X100
-Tablica stron pamięci zawiera odwzorowanie stron pamięci logicznej do ramek pamięci fizycznej
-TAK
-NIE
-BRAK ODPOWIEDZI

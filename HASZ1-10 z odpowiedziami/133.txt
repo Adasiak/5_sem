@@ -1,5 +1,0 @@
-X010
-Muteks jest do użycia przez użytkownika, program jak i system operacyjny
-TAK
-NIE
-BRAK ODPOWIEDZI

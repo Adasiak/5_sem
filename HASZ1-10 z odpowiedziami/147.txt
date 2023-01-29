@@ -1,5 +1,0 @@
-X010
-Zajęcie muteksu jest równoważne zajęciu blokady zapisu i odczytu do odczytu
-TAK
-NIE
-BRAK ODPOWIEDZI

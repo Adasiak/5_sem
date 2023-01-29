@@ -1,5 +1,0 @@
-X100
-Muteks może zastąpić blokadę zapisu i odczytu 
-TAK
-NIE
-BRAK ODPOWIEDZI

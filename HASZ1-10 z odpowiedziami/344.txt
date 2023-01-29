@@ -1,5 +1,0 @@
-X010
-Schemat RAID-1 zwiększa prędkość zarówno przy odczycie jak i zapisie
-TAK
-NIE
-BRAK ODPOWIEDZI

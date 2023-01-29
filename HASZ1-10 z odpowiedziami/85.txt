@@ -1,5 +1,0 @@
-X010
-Przejście do stanu oczekiwania blokuje równoległość wątków jądra
-TAK
-NIE
-BRAK ODPOWIEDZI

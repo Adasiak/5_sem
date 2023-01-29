@@ -1,5 +1,0 @@
-X100
-Znajomość adresu bazowego i granicznego każdego programu pozwala zapewnić ochronę pamięci.
-TAK
-NIE
-BRAK ODPOWIEDZI

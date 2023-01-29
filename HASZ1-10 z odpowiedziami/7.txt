@@ -1,5 +1,0 @@
-X010
-System operacyjny musi zabezpieczać się przed niepoprawnym działaniem innych systemów operacyjnych
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,6 +1,0 @@
-X010
-Komunikacja wątków przez zmienne globalne jest z reguły szybsza niż komunikacja procesów przez pamięć wspólną.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

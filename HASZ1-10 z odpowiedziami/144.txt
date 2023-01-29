@@ -1,5 +1,0 @@
-X010
-Wprowadzenie ochrony sekcji krytycznej muteksem z reguły skraca czas wykonania programu.
-TAK
-NIE
-BRAK ODPOWIEDZI

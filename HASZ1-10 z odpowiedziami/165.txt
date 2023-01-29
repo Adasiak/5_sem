@@ -1,5 +1,0 @@
-X100
-Usuwanie zakleszczeń można realizować przez zabijanie procesów.
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X100
-Fragmentację wewnętrzną można minimalizowac stosując małe jednostki alokacji
-TAK
-NIE
-BRAK ODPOWIEDZI

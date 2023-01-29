@@ -1,5 +1,0 @@
-X010
-Ochrona sekcji krytycznej muteksem polega na zwolnieniu muteksu na czas jej wykonywania
-TAK
-NIE
-BRAK ODPOWIEDZI

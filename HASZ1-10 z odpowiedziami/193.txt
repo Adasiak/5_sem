@@ -1,5 +1,0 @@
-X100
-Kwant czasu planowania rotacyjnego RR powinien być większy niż czas przełączania kontekstu. 
-TAK
-NIE
-BRAK ODPOWIEDZI

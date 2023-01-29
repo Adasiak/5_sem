@@ -1,5 +1,0 @@
-X010
-O ile proces sam się nie uśpi/zawiesi, będzie stale wykonywany na procesorze.
-TAK
-NIE
-BRAK ODPOWIEDZI

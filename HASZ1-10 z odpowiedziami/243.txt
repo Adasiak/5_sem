@@ -1,5 +1,0 @@
-X010
-Czas wirtualny procesu oznacza czas zużyty na wirtualizację.
-TAK
-NIE
-BRAK ODPOWIEDZI

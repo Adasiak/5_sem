@@ -1,5 +1,0 @@
-X100
-Mutex jest szczególnym przypadkiem semafora
-TAK
-NIE
-BRAK ODPOWIEDZI

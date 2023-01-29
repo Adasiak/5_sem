@@ -1,5 +1,0 @@
-X100
-Proces zmiany adresów logicznych na fizyczne nazywa się translacja adresów
-TAK
-NIE
-BRAK ODPOWIEDZI

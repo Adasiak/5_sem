@@ -1,5 +1,0 @@
-X010
-Semafor można zastąpić muteksem
-TAK
-NIE
-BRAK ODPOWIEDZI

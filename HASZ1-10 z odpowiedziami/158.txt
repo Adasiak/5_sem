@@ -1,5 +1,0 @@
-X100
-Graf alokacji zasobów pozwala przedstawić zasoby przydzielone procesom.
-TAK
-NIE
-BRAK ODPOWIEDZI

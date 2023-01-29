@@ -1,5 +1,0 @@
-X100
-Przy zastępowaniu stron pamięci wirtualnej, ofiara brudna (nadpisana w pamięci) musi zostać przepisana do obszaru wymiany na dysku.
-TAK
-NIE
-BRAK ODPOWIEDZI

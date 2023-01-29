@@ -1,5 +1,0 @@
-X100
-Stronicowanie na żądanie polega na sprowadzaniu do pamięci fizycznej tylko takich stron pamięci, do których odwołuje się proces.
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X100
-Standard RAID-6 jest odporny na awarię w tym samym czasie dwóch dysków macierzy.
-TAK
-NIE
-BRAK ODPOWIEDZI

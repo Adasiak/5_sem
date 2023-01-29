@@ -1,5 +1,0 @@
-X100
-Zwiększenie kwantu czasu może spowodować zmniejszenie strat wynikających z przełączania kontekstu 
-TAK
-NIE
-BRAK ODPOWIEDZI

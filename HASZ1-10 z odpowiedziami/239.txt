@@ -1,5 +1,0 @@
-X010
-Nierównomierność timera może być spowodowana kumulowaniem się w pracy cyklicznej drobnych błędów.
-TAK
-NIE
-BRAK ODPOWIEDZI

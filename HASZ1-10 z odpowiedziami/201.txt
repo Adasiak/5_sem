@@ -1,5 +1,0 @@
-X010
-Strategia planowania RR (Round-Robin) dobrze nadaje się do planowania zadań tła (obliczeniowych). 
-TAK
-NIE
-BRAK ODPOWIEDZI

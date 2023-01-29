@@ -1,5 +1,0 @@
-X100
-Barierę można wykorzystać do synchronizacji uruchomienia zestawu wątków lub procesów
-TAK
-NIE
-BRAK ODPOWIEDZI

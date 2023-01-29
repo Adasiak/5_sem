@@ -1,5 +1,0 @@
-X100
-Pthread prezentuje model wątków łączący model wątków użytkownika z modelem wątków jądra.
-TAK
-NIE
-BRAK ODPOWIEDZI

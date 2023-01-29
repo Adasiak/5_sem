@@ -1,5 +1,0 @@
-X010
-Algorytm FCFS dąży do zminimalizowania ilości ruchów głowicy
-TAK
-NIE
-BRAK ODPOWIEDZI

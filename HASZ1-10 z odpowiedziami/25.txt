@@ -1,5 +1,0 @@
-X010
-Proces utworzony przez klonowanie współdzieli z rodzicem założone wcześniej blokady plików
-TAK
-NIE
-BRAK ODPOWIEDZI

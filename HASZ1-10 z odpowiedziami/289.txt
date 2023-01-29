@@ -1,5 +1,0 @@
-X100
-Problem błędu strony (page fault) jest rozwiązany przez sprowadzenie strony do pamięci fizycznej
-TAK
-NIE
-BRAK ODPOWIEDZI

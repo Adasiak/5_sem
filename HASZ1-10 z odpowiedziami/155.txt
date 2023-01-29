@@ -1,5 +1,0 @@
-X010
-Celem numerowania zasobów jest zapewnienie, by ważniejsze zasoby były przydzielane najpierw.
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X010
-Zmienna warunkowa służy do warunkowego wykonania sekcji programu przez wątki i procesy
-TAK
-NIE
-BRAK ODPOWIEDZI

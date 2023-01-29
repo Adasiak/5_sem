@@ -1,5 +1,0 @@
-X010
-Zmienna warunkowa pozwala zastąpić muteks dla zapewnienia wyłączności dostępu do sekcji krytycznej
-TAK
-NIE
-BRAK ODPOWIEDZI

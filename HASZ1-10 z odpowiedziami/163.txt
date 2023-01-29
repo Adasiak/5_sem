@@ -1,5 +1,0 @@
-X010
-Unikanie zakleszczeń eliminuje warunki konieczne zakleszczenia i gwarantuje, że ono nie powstanie.
-TAK
-NIE
-BRAK ODPOWIEDZI

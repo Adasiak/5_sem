@@ -1,5 +1,0 @@
-X100
-Strategia planowania RR (Round-Robin) zapewnia "sprawiedliwość" wykonywania procesów. 
-TAK
-NIE
-BRAK ODPOWIEDZI

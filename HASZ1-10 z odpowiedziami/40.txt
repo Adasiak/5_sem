@@ -1,5 +1,0 @@
-X010
-Jedną z funkcji procesów w systemie unix jest umożliwienie przydziału zasobów wykonywanym w systemie zadaniom
-TAK
-NIE
-BRAK ODPOWIEDZI

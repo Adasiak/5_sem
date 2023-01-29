@@ -1,5 +1,0 @@
-X100
-Sygnały w systemie unix mogą być generowane zarówno przez sprzęt jak i oprogramowanie
-TAK
-NIE
-BRAK ODPOWIEDZI

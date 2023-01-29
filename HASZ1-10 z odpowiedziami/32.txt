@@ -1,5 +1,0 @@
-X010
-Stan uśpienia procesu oznacza oczekiwanie na przydział pamięci
-TAK
-NIE
-BRAK ODPOWIEDZI

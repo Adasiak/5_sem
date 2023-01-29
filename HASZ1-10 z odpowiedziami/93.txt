@@ -1,5 +1,0 @@
-X010
-Funkcje generujące efekty globalne mogą być bez ograniczeń używane w programach z wątkami.
-TAK
-NIE
-BRAK ODPOWIEDZI

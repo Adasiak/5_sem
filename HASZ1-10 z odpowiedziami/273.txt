@@ -1,5 +1,0 @@
-X100
-Proces w czasie pracy posługuje się adresami logicznymi
-TAK
-NIE
-BRAK ODPOWIEDZI

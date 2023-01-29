@@ -1,5 +1,0 @@
-X010
-Tablica stron pamięci wykorzystywana jest w systemach alokacji ciągłej.
-TAK
-NIE
-BRAK ODPOWIEDZI

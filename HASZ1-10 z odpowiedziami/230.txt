@@ -1,5 +1,0 @@
-X010
-Zegar typowo można zaprogramować, aby po określonym czasie przysłał sygnał‚ do procesu/ wątku.
-TAK
-NIE
-BRAK ODPOWIEDZI

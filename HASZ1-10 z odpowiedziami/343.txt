@@ -1,5 +1,0 @@
-X100
-Schemat RAID-0 zwiększa prędkość zarówno przy odczycie jak i zapisie
-TAK
-NIE
-BRAK ODPOWIEDZI

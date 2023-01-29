@@ -1,5 +1,0 @@
-X010
-Wielozadaniowość jest mechanizmem, którego realizacja możliwa jest jedynie w systemach wieloprocesorowych lub wielordzeniowych.
-TAK
-NIE
-BRAK ODPOWIEDZI

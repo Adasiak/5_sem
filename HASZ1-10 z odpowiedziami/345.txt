@@ -1,5 +1,0 @@
-X100
-Schemat RAID-1 zapewnia redundancję i zwiększa niezawodność pracy
-TAK
-NIE
-BRAK ODPOWIEDZI

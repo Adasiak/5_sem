@@ -1,5 +1,0 @@
-X010
-W strategii RR im kwant czasu jest mniejszy w stosunku do czasu przełączeń kontekstu, tym lepiej dla globalnej wydajności systemu. 
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X010
-Wartość time_t służy do określania czasu obliczeń procesu jako liczby sekund.
-TAK
-NIE
-BRAK ODPOWIEDZI

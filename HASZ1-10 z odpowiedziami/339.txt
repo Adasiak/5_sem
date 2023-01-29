@@ -1,5 +1,0 @@
-X010
-Przykładami urządzeń strumieniowych są dyski i taśmy, gdyż ich transfer odbywa się jednostkami o zmiennej długości.
-TAK
-NIE
-BRAK ODPOWIEDZI

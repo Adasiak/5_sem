@@ -1,5 +1,0 @@
-X100
-Cztery dyski twarde o pojemności 100 GB połączone w macierz RAID-5 udostępnią przestrzeń o pojemności 300 GB.
-TAK
-NIE
-BRAK ODPOWIEDZI

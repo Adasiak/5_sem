@@ -1,5 +1,0 @@
-X010
-Przy stosowaniu metody unikania, nie wszystkie warunki konieczne powstawania zakleszczeń są prawdziwe.
-TAK
-NIE
-BRAK ODPOWIEDZI

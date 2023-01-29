@@ -1,5 +1,0 @@
-X100
-Przekroczenie (overrun) timera oznacza wystąpienie kolejnego przeterminowania timera zanim zakończy się obsługa poprzedniego.
-TAK
-NIE
-BRAK ODPOWIEDZI

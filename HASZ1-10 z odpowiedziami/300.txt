@@ -1,5 +1,0 @@
-X100
-Semantyka kopii oznacza że dane wykorzystane w operacjach I-O są identyczne z oryginalnymi danymi.
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X010
-Stratega planowania SJF (Shortest-jobtime-first) jest algorytmem wywłaszczającym 
-TAK
-NIE
-BRAK ODPOWIEDZI

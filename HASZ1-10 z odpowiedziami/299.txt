@@ -1,5 +1,0 @@
-X100
-Zwykła tablica stron pamięci zawiera adresy fizyczne przydzielonych stron pamięci procesu.
-TAK
-NIE
-BRAK ODPOWIEDZI

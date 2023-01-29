@@ -1,6 +1,0 @@
-X100
-Aplikacja współbieżna zbudowana z wątków będzie działać ogólnie szybciej niż gdyby była zbudowana z procesów.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

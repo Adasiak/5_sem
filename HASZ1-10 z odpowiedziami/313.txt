@@ -1,5 +1,0 @@
-X100
-Buforowanie operacji I-O jest stosowane w celu dostosowania różnych jednostek transferu źródła i odbiorcy danych (między innymi)
-TAK
-NIE
-BRAK ODPOWIEDZI

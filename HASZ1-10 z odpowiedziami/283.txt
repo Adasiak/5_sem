@@ -1,5 +1,0 @@
-X010
-Wiązanie danych na etapie wykonywania upraszcza translację adresu wirtualnego na fizyczny.
-TAK
-NIE
-BRAK ODPOWIEDZI

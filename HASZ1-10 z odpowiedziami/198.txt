@@ -1,5 +1,0 @@
-X010
-Strategia planowania FCFS (First-Come-First-Served) może doprowadzić do zagłodzenia pewnych procesów. 
-TAK
-NIE
-BRAK ODPOWIEDZI

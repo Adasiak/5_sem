@@ -1,6 +1,0 @@
-X100
-Operacje I/O realizowane przez DMA pozwalają odciążyć główny procesor systemu przy transferach I/O.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

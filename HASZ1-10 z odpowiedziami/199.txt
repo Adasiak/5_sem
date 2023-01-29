@@ -1,5 +1,0 @@
-X100
-Wielopoziomowe kolejki planowania pozwalają stosować różne algorytmy planowania dla zadań interakcyjnych i obliczeniowych. 
-TAK
-NIE
-BRAK ODPOWIEDZI

@@ -1,5 +1,0 @@
-X010
-Timery typowo mogą odmierzać czas zarówno do przodu jak i do tyłu.
-TAK
-NIE
-BRAK ODPOWIEDZI

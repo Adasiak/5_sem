@@ -1,5 +1,0 @@
-X100
-Nierównomierność (jitter) timera może być spowodowana własnościami sprzętu obliczeniowego.
-TAK
-NIE
-BRAK ODPOWIEDZI

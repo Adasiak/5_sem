@@ -1,5 +1,0 @@
-X010
-Zmienna warunkowa służy do przesyłania danych oczekującym na niej wątkom lub procesom 
-TAK
-NIE
-BRAK ODPOWIEDZI

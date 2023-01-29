@@ -1,5 +1,0 @@
-X010
-Strategia planowania SJF (Shortest-jobtime-first) ogólnie zapewnia "sprawiedliwość" wykonywania procesów. 
-TAK
-NIE
-BRAK ODPOWIEDZI

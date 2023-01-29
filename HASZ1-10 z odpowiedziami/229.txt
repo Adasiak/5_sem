@@ -1,5 +1,0 @@
-X010
-Timery domyślnie działają w trybie cyklicznym.
-TAK
-NIE
-BRAK ODPOWIEDZI

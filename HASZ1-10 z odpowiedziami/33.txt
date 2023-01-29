@@ -1,5 +1,0 @@
-X010
-Procesy są tworzone w celu usprawnienia przydziału pamięci (quasi)równolegle wykonywanym zadaniom
-TAK
-NIE
-BRAK ODPOWIEDZI

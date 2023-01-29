@@ -1,5 +1,0 @@
-X100
-DMA umożliwia bezpośredni dostęp do pamięci systemu komputerowego.
-TAK
-NIE
-BRAK ODPOWIEDZI

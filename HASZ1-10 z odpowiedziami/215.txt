@@ -1,5 +1,0 @@
-X100
-Partycjonowanie czasu pracy procesora może doprowadzić do marnowania cykli obliczeniowych podczas gdy są procesy oczekujące na obliczenia.
-TAK
-NIE
-BRAK ODPOWIEDZI

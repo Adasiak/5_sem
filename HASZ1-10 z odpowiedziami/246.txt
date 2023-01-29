@@ -1,5 +1,0 @@
-X010
-Czas wirtualny procesu oznacza czas pracy maszyny wirtualnej.
-TAK
-NIE
-BRAK ODPOWIEDZI

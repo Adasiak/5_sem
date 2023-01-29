@@ -1,5 +1,0 @@
-X010
-Opóźnieniem (latency) timera nazywamy spóźnione wykonywanie akcji przeterminowanego timera 
-TAK
-NIE
-BRAK ODPOWIEDZI

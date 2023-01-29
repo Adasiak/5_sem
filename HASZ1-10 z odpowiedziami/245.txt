@@ -1,5 +1,0 @@
-X100
-Czas wirtualny procesu jest obliczany oddzielnie jako czas bezpośrednich obliczeń procesu i czas obliczeń funkcji systemowych.
-TAK
-NIE
-BRAK ODPOWIEDZI

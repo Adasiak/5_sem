@@ -1,6 +1,0 @@
-X100
-Wszystkie wątki w ramach jednego procesu mają wspólną przestrzeń adresową.
-
-TAK
-NIE
-BRAK ODPOWIEDZI

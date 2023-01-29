@@ -1,5 +1,0 @@
-X010
-Algorytm wykrywania zakleszczeń należy wykonywać przy każdym nowym żądaniu alokacji zasobu.
-TAK
-NIE
-BRAK ODPOWIEDZI

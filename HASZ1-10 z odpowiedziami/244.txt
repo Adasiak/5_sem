@@ -1,5 +1,0 @@
-X100
-Czas wirtualny procesu oznacza czas procesora zużyty na obliczenia.
-TAK
-NIE
-BRAK ODPOWIEDZI

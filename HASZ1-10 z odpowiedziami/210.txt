@@ -1,5 +1,0 @@
-X010
-Zagłodzenie w planowaniu procesów oznacza odbieranie jednemu procesowi przydzielonych mu wcześniej zasobów. 
-TAK
-NIE
-BRAK ODPOWIEDZI
